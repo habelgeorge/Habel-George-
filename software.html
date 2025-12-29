@@ -1,504 +1,468 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="2685.2">
-  <style type="text/css">
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Menlo; color: #4689cc; -webkit-text-stroke: #4689cc}
-    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Menlo; color: #c27e65; -webkit-text-stroke: #c27e65}
-    p.p3 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Menlo; color: #8cd3fe; -webkit-text-stroke: #8cd3fe}
-    p.p4 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Menlo; color: #cacaca; -webkit-text-stroke: #cacaca}
-    p.p5 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Menlo; color: #71c083; -webkit-text-stroke: #71c083}
-    p.p6 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Menlo; color: #cacaca; -webkit-text-stroke: #cacaca; min-height: 16.0px}
-    p.p7 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Menlo; color: #6d7378; -webkit-text-stroke: #6d7378}
-    p.p8 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Menlo; color: #a7c598; -webkit-text-stroke: #a7c598}
-    span.s1 {font-kerning: none; background-color: #171818}
-    span.s2 {font-kerning: none; color: #8cd3fe; background-color: #171818; -webkit-text-stroke: 0px #8cd3fe}
-    span.s3 {font-kerning: none; color: #6d6d6d; background-color: #171818; -webkit-text-stroke: 0px #6d6d6d}
-    span.s4 {font-kerning: none; color: #4689cc; background-color: #171818; -webkit-text-stroke: 0px #4689cc}
-    span.s5 {font-kerning: none; color: #cacaca; background-color: #171818; -webkit-text-stroke: 0px #cacaca}
-    span.s6 {font-kerning: none; color: #c27e65; background-color: #171818; -webkit-text-stroke: 0px #c27e65}
-    span.s7 {font-kerning: none; color: #b76ff7; background-color: #171818; -webkit-text-stroke: 0px #b76ff7}
-    span.s8 {font-kerning: none; color: #d4d4d4; background-color: #171818; -webkit-text-stroke: 0px #d4d4d4}
-    span.s9 {font-kerning: none; color: #71c083; background-color: #171818; -webkit-text-stroke: 0px #71c083}
-    span.s10 {font-kerning: none}
-    span.s11 {font-kerning: none; color: #a7c598; background-color: #171818; -webkit-text-stroke: 0px #a7c598}
-    span.s12 {font-kerning: none; color: #6d7378; background-color: #171818; -webkit-text-stroke: 0px #6d7378}
-    span.s13 {font-kerning: none; color: #36c0a0; background-color: #171818; -webkit-text-stroke: 0px #36c0a0}
-    span.s14 {font-kerning: none; color: #f67c30; background-color: #171818; -webkit-text-stroke: 0px #f67c30}
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Habel James George | Software Engineer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc;
+            color: #0f172a;
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #cbd5e1;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #94a3b8;
+        }
+
+        /* Animations */
+        .fade-up {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+        }
+        .fade-up.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .skill-tag {
+            transition: all 0.3s ease;
+        }
+        .skill-tag:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        }
+
+        .project-card {
+            transition: all 0.3s ease;
+        }
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+    </style>
 </head>
-<body>
-<p class="p1"><span class="s1">&lt;!DOCTYPE</span><span class="s2"> html</span><span class="s1">&gt;</span></p>
-<p class="p2"><span class="s3">&lt;</span><span class="s4">html</span><span class="s5"> </span><span class="s2">lang</span><span class="s3">=</span><span class="s1">"en"</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"scroll-smooth"</span><span class="s3">&gt;</span></p>
-<p class="p1"><span class="s3">&lt;</span><span class="s1">head</span><span class="s3">&gt;</span></p>
-<p class="p3"><span class="s5"><span class="Apple-converted-space">    </span></span><span class="s3">&lt;</span><span class="s4">meta</span><span class="s5"> </span><span class="s1">charset</span><span class="s3">=</span><span class="s6">"UTF-8"</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">    </span></span><span class="s3">&lt;</span><span class="s4">meta</span><span class="s5"> </span><span class="s2">name</span><span class="s3">=</span><span class="s1">"viewport"</span><span class="s5"> </span><span class="s2">content</span><span class="s3">=</span><span class="s1">"width=device-width, initial-scale=1.0"</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">    </span></span><span class="s3">&lt;</span><span class="s4">title</span><span class="s3">&gt;</span><span class="s1">Habel James George | Software Engineer</span><span class="s3">&lt;/</span><span class="s4">title</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">    </span></span><span class="s3">&lt;</span><span class="s4">script</span><span class="s5"> </span><span class="s2">src</span><span class="s3">=</span><span class="s1">"https://cdn.tailwindcss.com"</span><span class="s3">&gt;&lt;/</span><span class="s4">script</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">    </span></span><span class="s3">&lt;</span><span class="s4">script</span><span class="s5"> </span><span class="s2">src</span><span class="s3">=</span><span class="s1">"https://unpkg.com/lucide@latest/dist/umd/lucide.js"</span><span class="s3">&gt;&lt;/</span><span class="s4">script</span><span class="s3">&gt;</span></p>
-<p class="p1"><span class="s5"><span class="Apple-converted-space">    </span></span><span class="s3">&lt;</span><span class="s1">style</span><span class="s3">&gt;</span></p>
-<p class="p5"><span class="s5"><span class="Apple-converted-space">        </span></span><span class="s7">@import</span><span class="s5"> </span><span class="s6">url</span><span class="s8">(</span><span class="s1">'https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;display=swap'</span><span class="s8">);</span></p>
-<p class="p6"><span class="s1"><span class="Apple-converted-space">        </span></span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s4">body</span><span class="s1"> </span><span class="s8">{</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">font-family:</span><span class="s1"> </span><span class="s9">'Inter'</span><span class="s8">,</span><span class="s1"> </span><span class="s6">sans-serif</span><span class="s8">;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">background-color:</span><span class="s1"> #f8fafc</span><span class="s8">;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">color:</span><span class="s1"> #0f172a</span><span class="s8">;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s8">}</span></p>
-<p class="p6"><span class="s10"></span><br></p>
-<p class="p7"><span class="s5"><span class="Apple-converted-space">        </span></span><span class="s1">/* Custom Scrollbar */</span></p>
-<p class="p1"><span class="s5"><span class="Apple-converted-space">        </span></span><span class="s1">::-webkit-scrollbar</span><span class="s5"> </span><span class="s8">{</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">width:</span><span class="s1"> </span><span class="s11">8px</span><span class="s8">;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s8">}</span></p>
-<p class="p1"><span class="s5"><span class="Apple-converted-space">        </span></span><span class="s1">::-webkit-scrollbar-track</span><span class="s5"> </span><span class="s8">{</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">background:</span><span class="s1"> #f1f1f1</span><span class="s8">;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s8">}</span></p>
-<p class="p1"><span class="s5"><span class="Apple-converted-space">        </span></span><span class="s1">::-webkit-scrollbar-thumb</span><span class="s5"> </span><span class="s8">{</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">background:</span><span class="s1"> #cbd5e1</span><span class="s8">;</span></p>
-<p class="p3"><span class="s5"><span class="Apple-converted-space">            </span></span><span class="s1">border-radius:</span><span class="s5"> </span><span class="s11">4px</span><span class="s8">;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s8">}</span></p>
-<p class="p1"><span class="s5"><span class="Apple-converted-space">        </span></span><span class="s1">::-webkit-scrollbar-thumb:hover</span><span class="s5"> </span><span class="s8">{</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">background:</span><span class="s1"> #94a3b8</span><span class="s8">;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s8">}</span></p>
-<p class="p6"><span class="s10"></span><br></p>
-<p class="p7"><span class="s5"><span class="Apple-converted-space">        </span></span><span class="s1">/* Animations */</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s4">.fade-up</span><span class="s1"> </span><span class="s8">{</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">opacity:</span><span class="s1"> </span><span class="s11">0</span><span class="s8">;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">transform:</span><span class="s1"> </span><span class="s6">translateY(</span><span class="s11">30px</span><span class="s6">)</span><span class="s8">;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">            </span></span><span class="s2">transition:</span><span class="s5"> </span><span class="s1">opacity</span><span class="s5"> </span><span class="s11">0.8s</span><span class="s5"> </span><span class="s1">ease-out</span><span class="s8">,</span><span class="s5"> </span><span class="s1">transform</span><span class="s5"> </span><span class="s11">0.8s</span><span class="s5"> </span><span class="s1">ease-out</span><span class="s8">;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s8">}</span></p>
-<p class="p1"><span class="s5"><span class="Apple-converted-space">        </span></span><span class="s1">.fade-up.visible</span><span class="s5"> </span><span class="s8">{</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">opacity:</span><span class="s1"> </span><span class="s11">1</span><span class="s8">;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">transform:</span><span class="s1"> </span><span class="s6">translateY(</span><span class="s11">0</span><span class="s6">)</span><span class="s8">;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s8">}</span></p>
-<p class="p6"><span class="s10"></span><br></p>
-<p class="p1"><span class="s5"><span class="Apple-converted-space">        </span></span><span class="s1">.skill-tag</span><span class="s5"> </span><span class="s8">{</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">transition:</span><span class="s1"> </span><span class="s6">all</span><span class="s1"> </span><span class="s11">0.3s</span><span class="s1"> </span><span class="s6">ease</span><span class="s8">;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s8">}</span></p>
-<p class="p1"><span class="s5"><span class="Apple-converted-space">        </span></span><span class="s1">.skill-tag:hover</span><span class="s5"> </span><span class="s8">{</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">transform:</span><span class="s1"> </span><span class="s6">translateY(</span><span class="s11">-2px</span><span class="s6">)</span><span class="s8">;</span></p>
-<p class="p8"><span class="s5"><span class="Apple-converted-space">            </span></span><span class="s2">box-shadow:</span><span class="s5"> </span><span class="s1">0</span><span class="s5"> </span><span class="s1">4px</span><span class="s5"> </span><span class="s1">6px</span><span class="s5"> </span><span class="s1">-1px</span><span class="s5"> </span><span class="s6">rgba(</span><span class="s1">0</span><span class="s8">,</span><span class="s5"> </span><span class="s1">0</span><span class="s8">,</span><span class="s5"> </span><span class="s1">0</span><span class="s8">,</span><span class="s5"> </span><span class="s1">0.1</span><span class="s6">)</span><span class="s8">,</span><span class="s5"> </span><span class="s1">0</span><span class="s5"> </span><span class="s1">2px</span><span class="s5"> </span><span class="s1">4px</span><span class="s5"> </span><span class="s1">-1px</span><span class="s5"> </span><span class="s6">rgba(</span><span class="s1">0</span><span class="s8">,</span><span class="s5"> </span><span class="s1">0</span><span class="s8">,</span><span class="s5"> </span><span class="s1">0</span><span class="s8">,</span><span class="s5"> </span><span class="s1">0.06</span><span class="s6">)</span><span class="s8">;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s8">}</span></p>
-<p class="p6"><span class="s10"></span><br></p>
-<p class="p1"><span class="s5"><span class="Apple-converted-space">        </span></span><span class="s1">.project-card</span><span class="s5"> </span><span class="s8">{</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">transition:</span><span class="s1"> </span><span class="s6">all</span><span class="s1"> </span><span class="s11">0.3s</span><span class="s1"> </span><span class="s6">ease</span><span class="s8">;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s8">}</span></p>
-<p class="p1"><span class="s5"><span class="Apple-converted-space">        </span></span><span class="s1">.project-card:hover</span><span class="s5"> </span><span class="s8">{</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">transform:</span><span class="s1"> </span><span class="s6">translateY(</span><span class="s11">-5px</span><span class="s6">)</span><span class="s8">;</span></p>
-<p class="p8"><span class="s5"><span class="Apple-converted-space">            </span></span><span class="s2">box-shadow:</span><span class="s5"> </span><span class="s1">0</span><span class="s5"> </span><span class="s1">20px</span><span class="s5"> </span><span class="s1">25px</span><span class="s5"> </span><span class="s1">-5px</span><span class="s5"> </span><span class="s6">rgba(</span><span class="s1">0</span><span class="s8">,</span><span class="s5"> </span><span class="s1">0</span><span class="s8">,</span><span class="s5"> </span><span class="s1">0</span><span class="s8">,</span><span class="s5"> </span><span class="s1">0.1</span><span class="s6">)</span><span class="s8">,</span><span class="s5"> </span><span class="s1">0</span><span class="s5"> </span><span class="s1">10px</span><span class="s5"> </span><span class="s1">10px</span><span class="s5"> </span><span class="s1">-5px</span><span class="s5"> </span><span class="s6">rgba(</span><span class="s1">0</span><span class="s8">,</span><span class="s5"> </span><span class="s1">0</span><span class="s8">,</span><span class="s5"> </span><span class="s1">0</span><span class="s8">,</span><span class="s5"> </span><span class="s1">0.04</span><span class="s6">)</span><span class="s8">;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s8">}</span></p>
-<p class="p1"><span class="s5"><span class="Apple-converted-space">    </span></span><span class="s3">&lt;/</span><span class="s1">style</span><span class="s3">&gt;</span></p>
-<p class="p1"><span class="s3">&lt;/</span><span class="s1">head</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s3">&lt;</span><span class="s4">body</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"antialiased selection:bg-blue-100 selection:text-blue-900"</span><span class="s3">&gt;</span></p>
-<p class="p6"><span class="s10"></span><br></p>
-<p class="p7"><span class="s5"><span class="Apple-converted-space">    </span></span><span class="s1">&lt;!-- NAVIGATION --&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">    </span></span><span class="s3">&lt;</span><span class="s4">nav</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"fixed top-0 w-full bg-white/80 backdrop-blur-md border-b border-slate-200 z-50"</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">        </span></span><span class="s3">&lt;</span><span class="s4">div</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"max-w-6xl mx-auto px-4 sm:px-6 lg:px-8"</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">            </span></span><span class="s3">&lt;</span><span class="s4">div</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"flex justify-between items-center h-16"</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                </span></span><span class="s3">&lt;</span><span class="s4">div</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"flex-shrink-0 flex items-center gap-2 cursor-pointer"</span><span class="s5"> </span><span class="s2">onclick</span><span class="s3">=</span><span class="s1">"window.scrollTo(0,0)"</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                    </span></span><span class="s3">&lt;</span><span class="s4">div</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center text-white font-bold"</span><span class="s3">&gt;</span><span class="s5">H</span><span class="s3">&lt;/</span><span class="s4">div</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                    </span></span><span class="s3">&lt;</span><span class="s4">span</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"font-bold text-xl tracking-tight text-slate-800"</span><span class="s3">&gt;</span><span class="s5">Habel George</span><span class="s3">&lt;/</span><span class="s4">span</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span></span><span class="s3">&lt;/</span><span class="s4">div</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                </span></span><span class="s3">&lt;</span><span class="s4">div</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"hidden md:flex space-x-8"</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                    </span></span><span class="s3">&lt;</span><span class="s4">a</span><span class="s5"> </span><span class="s2">href</span><span class="s3">=</span><span class="s1">"#about"</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"text-slate-600 hover:text-blue-600 font-medium transition-colors"</span><span class="s3">&gt;</span><span class="s5">About</span><span class="s3">&lt;/</span><span class="s4">a</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                    </span></span><span class="s3">&lt;</span><span class="s4">a</span><span class="s5"> </span><span class="s2">href</span><span class="s3">=</span><span class="s1">"#skills"</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"text-slate-600 hover:text-blue-600 font-medium transition-colors"</span><span class="s3">&gt;</span><span class="s5">Skills</span><span class="s3">&lt;/</span><span class="s4">a</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                    </span></span><span class="s3">&lt;</span><span class="s4">a</span><span class="s5"> </span><span class="s2">href</span><span class="s3">=</span><span class="s1">"#experience"</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"text-slate-600 hover:text-blue-600 font-medium transition-colors"</span><span class="s3">&gt;</span><span class="s5">Experience</span><span class="s3">&lt;/</span><span class="s4">a</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                    </span></span><span class="s3">&lt;</span><span class="s4">a</span><span class="s5"> </span><span class="s2">href</span><span class="s3">=</span><span class="s1">"#projects"</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"text-slate-600 hover:text-blue-600 font-medium transition-colors"</span><span class="s3">&gt;</span><span class="s5">Projects</span><span class="s3">&lt;/</span><span class="s4">a</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                    </span></span><span class="s3">&lt;</span><span class="s4">a</span><span class="s5"> </span><span class="s2">href</span><span class="s3">=</span><span class="s1">"#education"</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"text-slate-600 hover:text-blue-600 font-medium transition-colors"</span><span class="s3">&gt;</span><span class="s5">Education</span><span class="s3">&lt;/</span><span class="s4">a</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span></span><span class="s3">&lt;/</span><span class="s4">div</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span></span><span class="s3">&lt;</span><span class="s4">div</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                    </span></span><span class="s3">&lt;</span><span class="s4">a</span><span class="s5"> </span><span class="s2">href</span><span class="s3">=</span><span class="s1">"#contact"</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"px-5 py-2.5 bg-blue-600 text-white font-medium rounded-full hover:bg-blue-700 transition-all shadow-lg shadow-blue-600/20"</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                        </span>Contact Me</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span></span><span class="s3">&lt;/</span><span class="s4">a</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span></span><span class="s3">&lt;/</span><span class="s4">div</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s3">&lt;/</span><span class="s4">div</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s3">&lt;/</span><span class="s4">div</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">    </span></span><span class="s3">&lt;/</span><span class="s4">nav</span><span class="s3">&gt;</span></p>
-<p class="p6"><span class="s10"></span><br></p>
-<p class="p7"><span class="s5"><span class="Apple-converted-space">    </span></span><span class="s1">&lt;!-- HERO SECTION --&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">    </span></span><span class="s3">&lt;</span><span class="s4">section</span><span class="s5"> </span><span class="s2">id</span><span class="s3">=</span><span class="s1">"about"</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"pt-32 pb-20 lg:pt-48 lg:pb-32 px-4 max-w-6xl mx-auto"</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">        </span></span><span class="s3">&lt;</span><span class="s4">div</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"text-center max-w-3xl mx-auto fade-up"</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">            </span></span><span class="s3">&lt;</span><span class="s4">div</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"inline-block px-4 py-1.5 mb-6 rounded-full bg-blue-50 border border-blue-100 text-blue-600 text-sm font-semibold tracking-wide"</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>Software Engineer &amp; Digital Innovator</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s3">&lt;/</span><span class="s4">div</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">            </span></span><span class="s3">&lt;</span><span class="s4">h1</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"text-5xl md:text-7xl font-extrabold text-slate-900 tracking-tight mb-6 leading-tight"</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                </span>Building scalable </span><span class="s3">&lt;</span><span class="s4">span</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600"</span><span class="s3">&gt;</span><span class="s5">solutions</span><span class="s3">&lt;/</span><span class="s4">span</span><span class="s3">&gt;</span><span class="s5"> for complex problems.</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s3">&lt;/</span><span class="s4">h1</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">            </span></span><span class="s3">&lt;</span><span class="s4">p</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"text-lg md:text-xl text-slate-600 mb-10 leading-relaxed"</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>Results-driven Engineer with </span><span class="s3">&lt;</span><span class="s4">strong</span><span class="s3">&gt;</span><span class="s1">2.5+ years</span><span class="s3">&lt;/</span><span class="s4">strong</span><span class="s3">&gt;</span><span class="s1"> of experience in SDLC, Automation, and CI/CD. Currently bridging the gap between technical engineering and digital strategy at the </span><span class="s3">&lt;</span><span class="s4">strong</span><span class="s3">&gt;</span><span class="s1">University of Leeds</span><span class="s3">&lt;/</span><span class="s4">strong</span><span class="s3">&gt;</span><span class="s1">.</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s3">&lt;/</span><span class="s4">p</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">            </span></span><span class="s3">&lt;</span><span class="s4">div</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"flex flex-col sm:flex-row justify-center gap-4"</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                </span></span><span class="s3">&lt;</span><span class="s4">a</span><span class="s5"> </span><span class="s2">href</span><span class="s3">=</span><span class="s1">"#projects"</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"px-8 py-3.5 bg-slate-900 text-white font-semibold rounded-lg hover:bg-slate-800 transition-all flex items-center justify-center gap-2"</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>View My Work </span><span class="s3">&lt;</span><span class="s4">i</span><span class="s1"> </span><span class="s2">data-lucide</span><span class="s3">=</span><span class="s6">"arrow-down"</span><span class="s1"> </span><span class="s2">class</span><span class="s3">=</span><span class="s6">"w-4 h-4"</span><span class="s3">&gt;&lt;/</span><span class="s4">i</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span></span><span class="s3">&lt;/</span><span class="s4">a</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                </span></span><span class="s3">&lt;</span><span class="s4">a</span><span class="s5"> </span><span class="s2">href</span><span class="s3">=</span><span class="s1">"https://www.linkedin.com/in/habel-george-036346192"</span><span class="s5"> </span><span class="s2">target</span><span class="s3">=</span><span class="s1">"_blank"</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"px-8 py-3.5 bg-white text-slate-700 border border-slate-300 font-semibold rounded-lg hover:bg-slate-50 transition-all flex items-center justify-center gap-2"</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span></span><span class="s3">&lt;</span><span class="s4">i</span><span class="s1"> </span><span class="s2">data-lucide</span><span class="s3">=</span><span class="s6">"linkedin"</span><span class="s1"> </span><span class="s2">class</span><span class="s3">=</span><span class="s6">"w-4 h-4"</span><span class="s3">&gt;&lt;/</span><span class="s4">i</span><span class="s3">&gt;</span><span class="s1"> LinkedIn</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span></span><span class="s3">&lt;/</span><span class="s4">a</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s3">&lt;/</span><span class="s4">div</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s3">&lt;/</span><span class="s4">div</span><span class="s3">&gt;</span></p>
-<p class="p1"><span class="s5"><span class="Apple-converted-space">    </span></span><span class="s3">&lt;/</span><span class="s1">section</span><span class="s3">&gt;</span></p>
-<p class="p6"><span class="s10"></span><br></p>
-<p class="p7"><span class="s5"><span class="Apple-converted-space">    </span></span><span class="s1">&lt;!-- SKILLS SECTION --&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">    </span></span><span class="s3">&lt;</span><span class="s4">section</span><span class="s5"> </span><span class="s2">id</span><span class="s3">=</span><span class="s1">"skills"</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"py-20 bg-white"</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">        </span></span><span class="s3">&lt;</span><span class="s4">div</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"max-w-6xl mx-auto px-4"</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">            </span></span><span class="s3">&lt;</span><span class="s4">h2</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"text-3xl font-bold text-slate-900 mb-12 text-center"</span><span class="s3">&gt;</span><span class="s5">Technical Arsenal</span><span class="s3">&lt;/</span><span class="s4">h2</span><span class="s3">&gt;</span></p>
-<p class="p6"><span class="s1"><span class="Apple-converted-space">            </span></span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">            </span></span><span class="s3">&lt;</span><span class="s4">div</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8"</span><span class="s3">&gt;</span></p>
-<p class="p7"><span class="s5"><span class="Apple-converted-space">                </span></span><span class="s1">&lt;!-- Languages --&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                </span></span><span class="s3">&lt;</span><span class="s4">div</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"fade-up p-6 rounded-2xl bg-slate-50 border border-slate-100"</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                    </span></span><span class="s3">&lt;</span><span class="s4">div</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center mb-4 text-blue-600"</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                        </span></span><span class="s3">&lt;</span><span class="s4">i</span><span class="s1"> </span><span class="s2">data-lucide</span><span class="s3">=</span><span class="s6">"code-2"</span><span class="s1"> </span><span class="s2">class</span><span class="s3">=</span><span class="s6">"w-5 h-5"</span><span class="s3">&gt;&lt;/</span><span class="s4">i</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span></span><span class="s3">&lt;/</span><span class="s4">div</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span></span><span class="s3">&lt;</span><span class="s4">h3</span><span class="s1"> </span><span class="s2">class</span><span class="s3">=</span><span class="s6">"font-bold text-lg mb-4"</span><span class="s3">&gt;</span><span class="s1">Languages</span><span class="s3">&lt;/</span><span class="s4">h3</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                    </span></span><span class="s3">&lt;</span><span class="s4">div</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"flex flex-wrap gap-2"</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                        </span></span><span class="s3">&lt;</span><span class="s4">span</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"skill-tag px-3 py-1 bg-white border border-slate-200 rounded text-sm font-medium text-slate-600"</span><span class="s3">&gt;</span><span class="s5">JavaScript</span><span class="s3">&lt;/</span><span class="s4">span</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                        </span></span><span class="s3">&lt;</span><span class="s4">span</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"skill-tag px-3 py-1 bg-white border border-slate-200 rounded text-sm font-medium text-slate-600"</span><span class="s3">&gt;</span><span class="s5">SQL</span><span class="s3">&lt;/</span><span class="s4">span</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                        </span></span><span class="s3">&lt;</span><span class="s4">span</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"skill-tag px-3 py-1 bg-white border border-slate-200 rounded text-sm font-medium text-slate-600"</span><span class="s3">&gt;</span><span class="s5">HTML5</span><span class="s3">&lt;/</span><span class="s4">span</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                        </span></span><span class="s3">&lt;</span><span class="s4">span</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"skill-tag px-3 py-1 bg-white border border-slate-200 rounded text-sm font-medium text-slate-600"</span><span class="s3">&gt;</span><span class="s5">CSS3</span><span class="s3">&lt;/</span><span class="s4">span</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span></span><span class="s3">&lt;/</span><span class="s4">div</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span></span><span class="s3">&lt;/</span><span class="s4">div</span><span class="s3">&gt;</span></p>
-<p class="p6"><span class="s10"></span><br></p>
-<p class="p7"><span class="s5"><span class="Apple-converted-space">                </span></span><span class="s1">&lt;!-- Frameworks --&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                </span></span><span class="s3">&lt;</span><span class="s4">div</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"fade-up p-6 rounded-2xl bg-slate-50 border border-slate-100"</span><span class="s5"> </span><span class="s2">style</span><span class="s3">=</span><span class="s1">"transition-delay: 100ms;"</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                    </span></span><span class="s3">&lt;</span><span class="s4">div</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"w-10 h-10 bg-indigo-100 rounded-lg flex items-center justify-center mb-4 text-indigo-600"</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                        </span></span><span class="s3">&lt;</span><span class="s4">i</span><span class="s1"> </span><span class="s2">data-lucide</span><span class="s3">=</span><span class="s6">"layers"</span><span class="s1"> </span><span class="s2">class</span><span class="s3">=</span><span class="s6">"w-5 h-5"</span><span class="s3">&gt;&lt;/</span><span class="s4">i</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span></span><span class="s3">&lt;/</span><span class="s4">div</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span></span><span class="s3">&lt;</span><span class="s4">h3</span><span class="s1"> </span><span class="s2">class</span><span class="s3">=</span><span class="s6">"font-bold text-lg mb-4"</span><span class="s3">&gt;</span><span class="s1">Frameworks</span><span class="s3">&lt;/</span><span class="s4">h3</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                    </span></span><span class="s3">&lt;</span><span class="s4">div</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"flex flex-wrap gap-2"</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                        </span></span><span class="s3">&lt;</span><span class="s4">span</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"skill-tag px-3 py-1 bg-white border border-slate-200 rounded text-sm font-medium text-slate-600"</span><span class="s3">&gt;</span><span class="s5">Playwright</span><span class="s3">&lt;/</span><span class="s4">span</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                        </span></span><span class="s3">&lt;</span><span class="s4">span</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"skill-tag px-3 py-1 bg-white border border-slate-200 rounded text-sm font-medium text-slate-600"</span><span class="s3">&gt;</span><span class="s5">Selenium</span><span class="s3">&lt;/</span><span class="s4">span</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                        </span></span><span class="s3">&lt;</span><span class="s4">span</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"skill-tag px-3 py-1 bg-white border border-slate-200 rounded text-sm font-medium text-slate-600"</span><span class="s3">&gt;</span><span class="s5">RestAssured</span><span class="s3">&lt;/</span><span class="s4">span</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                        </span></span><span class="s3">&lt;</span><span class="s4">span</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"skill-tag px-3 py-1 bg-white border border-slate-200 rounded text-sm font-medium text-slate-600"</span><span class="s3">&gt;</span><span class="s5">Node.js</span><span class="s3">&lt;/</span><span class="s4">span</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span></span><span class="s3">&lt;/</span><span class="s4">div</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span></span><span class="s3">&lt;/</span><span class="s4">div</span><span class="s3">&gt;</span></p>
-<p class="p6"><span class="s10"></span><br></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span></span><span class="s12">&lt;!-- Tools --&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                </span></span><span class="s3">&lt;</span><span class="s4">div</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"fade-up p-6 rounded-2xl bg-slate-50 border border-slate-100"</span><span class="s5"> </span><span class="s2">style</span><span class="s3">=</span><span class="s1">"transition-delay: 200ms;"</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                    </span></span><span class="s3">&lt;</span><span class="s4">div</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"w-10 h-10 bg-emerald-100 rounded-lg flex items-center justify-center mb-4 text-emerald-600"</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                        </span></span><span class="s3">&lt;</span><span class="s4">i</span><span class="s1"> </span><span class="s2">data-lucide</span><span class="s3">=</span><span class="s6">"wrench"</span><span class="s1"> </span><span class="s2">class</span><span class="s3">=</span><span class="s6">"w-5 h-5"</span><span class="s3">&gt;&lt;/</span><span class="s4">i</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span></span><span class="s3">&lt;/</span><span class="s4">div</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span></span><span class="s3">&lt;</span><span class="s4">h3</span><span class="s1"> </span><span class="s2">class</span><span class="s3">=</span><span class="s6">"font-bold text-lg mb-4"</span><span class="s3">&gt;</span><span class="s1">DevOps &amp; Tools</span><span class="s3">&lt;/</span><span class="s4">h3</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                    </span></span><span class="s3">&lt;</span><span class="s4">div</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"flex flex-wrap gap-2"</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                        </span></span><span class="s3">&lt;</span><span class="s4">span</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"skill-tag px-3 py-1 bg-white border border-slate-200 rounded text-sm font-medium text-slate-600"</span><span class="s3">&gt;</span><span class="s5">Git</span><span class="s3">&lt;/</span><span class="s4">span</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                        </span></span><span class="s3">&lt;</span><span class="s4">span</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"skill-tag px-3 py-1 bg-white border border-slate-200 rounded text-sm font-medium text-slate-600"</span><span class="s3">&gt;</span><span class="s5">Jenkins</span><span class="s3">&lt;/</span><span class="s4">span</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                        </span></span><span class="s3">&lt;</span><span class="s4">span</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"skill-tag px-3 py-1 bg-white border border-slate-200 rounded text-sm font-medium text-slate-600"</span><span class="s3">&gt;</span><span class="s5">Docker</span><span class="s3">&lt;/</span><span class="s4">span</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                        </span></span><span class="s3">&lt;</span><span class="s4">span</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"skill-tag px-3 py-1 bg-white border border-slate-200 rounded text-sm font-medium text-slate-600"</span><span class="s3">&gt;</span><span class="s5">Postman</span><span class="s3">&lt;/</span><span class="s4">span</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                        </span></span><span class="s3">&lt;</span><span class="s4">span</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"skill-tag px-3 py-1 bg-white border border-slate-200 rounded text-sm font-medium text-slate-600"</span><span class="s3">&gt;</span><span class="s5">JIRA</span><span class="s3">&lt;/</span><span class="s4">span</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span></span><span class="s3">&lt;/</span><span class="s4">div</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span></span><span class="s3">&lt;/</span><span class="s4">div</span><span class="s3">&gt;</span></p>
-<p class="p6"><span class="s10"></span><br></p>
-<p class="p7"><span class="s5"><span class="Apple-converted-space">                </span></span><span class="s1">&lt;!-- Database --&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                </span></span><span class="s3">&lt;</span><span class="s4">div</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"fade-up p-6 rounded-2xl bg-slate-50 border border-slate-100"</span><span class="s5"> </span><span class="s2">style</span><span class="s3">=</span><span class="s1">"transition-delay: 300ms;"</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                    </span></span><span class="s3">&lt;</span><span class="s4">div</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"w-10 h-10 bg-amber-100 rounded-lg flex items-center justify-center mb-4 text-amber-600"</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                        </span></span><span class="s3">&lt;</span><span class="s4">i</span><span class="s1"> </span><span class="s2">data-lucide</span><span class="s3">=</span><span class="s6">"database"</span><span class="s1"> </span><span class="s2">class</span><span class="s3">=</span><span class="s6">"w-5 h-5"</span><span class="s3">&gt;&lt;/</span><span class="s4">i</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span></span><span class="s3">&lt;/</span><span class="s4">div</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span></span><span class="s3">&lt;</span><span class="s4">h3</span><span class="s1"> </span><span class="s2">class</span><span class="s3">=</span><span class="s6">"font-bold text-lg mb-4"</span><span class="s3">&gt;</span><span class="s1">Data</span><span class="s3">&lt;/</span><span class="s4">h3</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                    </span></span><span class="s3">&lt;</span><span class="s4">div</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"flex flex-wrap gap-2"</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                        </span></span><span class="s3">&lt;</span><span class="s4">span</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"skill-tag px-3 py-1 bg-white border border-slate-200 rounded text-sm font-medium text-slate-600"</span><span class="s3">&gt;</span><span class="s5">MySQL</span><span class="s3">&lt;/</span><span class="s4">span</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                        </span></span><span class="s3">&lt;</span><span class="s4">span</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"skill-tag px-3 py-1 bg-white border border-slate-200 rounded text-sm font-medium text-slate-600"</span><span class="s3">&gt;</span><span class="s5">PostgreSQL</span><span class="s3">&lt;/</span><span class="s4">span</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                        </span></span><span class="s3">&lt;</span><span class="s4">span</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"skill-tag px-3 py-1 bg-white border border-slate-200 rounded text-sm font-medium text-slate-600"</span><span class="s3">&gt;</span><span class="s5">Data Integrity</span><span class="s3">&lt;/</span><span class="s4">span</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span></span><span class="s3">&lt;/</span><span class="s4">div</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span></span><span class="s3">&lt;/</span><span class="s4">div</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s3">&lt;/</span><span class="s4">div</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s3">&lt;/</span><span class="s4">div</span><span class="s3">&gt;</span></p>
-<p class="p1"><span class="s5"><span class="Apple-converted-space">    </span></span><span class="s3">&lt;/</span><span class="s1">section</span><span class="s3">&gt;</span></p>
-<p class="p6"><span class="s10"></span><br></p>
-<p class="p7"><span class="s5"><span class="Apple-converted-space">    </span></span><span class="s1">&lt;!-- EXPERIENCE SECTION --&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">    </span></span><span class="s3">&lt;</span><span class="s4">section</span><span class="s5"> </span><span class="s2">id</span><span class="s3">=</span><span class="s1">"experience"</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"py-20 bg-slate-50"</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">        </span></span><span class="s3">&lt;</span><span class="s4">div</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"max-w-4xl mx-auto px-4"</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">            </span></span><span class="s3">&lt;</span><span class="s4">h2</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"text-3xl font-bold text-slate-900 mb-12 flex items-center gap-3"</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span></span><span class="s3">&lt;</span><span class="s4">i</span><span class="s1"> </span><span class="s2">data-lucide</span><span class="s3">=</span><span class="s6">"briefcase"</span><span class="s1"> </span><span class="s2">class</span><span class="s3">=</span><span class="s6">"w-8 h-8 text-blue-600"</span><span class="s3">&gt;&lt;/</span><span class="s4">i</span><span class="s3">&gt;</span><span class="s1"> Professional Journey</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s3">&lt;/</span><span class="s4">h2</span><span class="s3">&gt;</span></p>
-<p class="p6"><span class="s10"></span><br></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">            </span></span><span class="s3">&lt;</span><span class="s4">div</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"relative border-l-2 border-slate-200 ml-4 space-y-12"</span><span class="s3">&gt;</span></p>
-<p class="p6"><span class="s1"><span class="Apple-converted-space">                </span></span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span></span><span class="s12">&lt;!-- Job 1 --&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                </span></span><span class="s3">&lt;</span><span class="s4">div</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"mb-8 ml-8 fade-up"</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                    </span></span><span class="s3">&lt;</span><span class="s4">span</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"absolute -left-[9px] top-0 h-4 w-4 rounded-full bg-blue-600 ring-4 ring-blue-100"</span><span class="s3">&gt;&lt;/</span><span class="s4">span</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                    </span></span><span class="s3">&lt;</span><span class="s4">div</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"bg-white p-6 rounded-xl shadow-sm border border-slate-100"</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                        </span></span><span class="s3">&lt;</span><span class="s4">div</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"flex flex-col sm:flex-row justify-between items-start mb-4"</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                            </span></span><span class="s3">&lt;</span><span class="s4">div</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                                </span></span><span class="s3">&lt;</span><span class="s4">h3</span><span class="s1"> </span><span class="s2">class</span><span class="s3">=</span><span class="s6">"text-xl font-bold text-slate-900"</span><span class="s3">&gt;</span><span class="s1">Software Engineer (QA &amp; Automation)</span><span class="s3">&lt;/</span><span class="s4">h3</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                                </span></span><span class="s3">&lt;</span><span class="s4">p</span><span class="s1"> </span><span class="s2">class</span><span class="s3">=</span><span class="s6">"text-blue-600 font-medium"</span><span class="s3">&gt;</span><span class="s1">QBurst Technologies</span><span class="s3">&lt;/</span><span class="s4">p</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                            </span></span><span class="s3">&lt;/</span><span class="s4">div</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                            </span></span><span class="s3">&lt;</span><span class="s4">span</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"px-3 py-1 bg-slate-100 text-slate-600 rounded-full text-xs font-semibold mt-2 sm:mt-0"</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                                </span>July 2022 – March 2025</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                            </span></span><span class="s3">&lt;/</span><span class="s4">span</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                        </span></span><span class="s3">&lt;/</span><span class="s4">div</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                        </span></span><span class="s3">&lt;</span><span class="s4">ul</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"space-y-4 text-slate-600"</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                            </span></span><span class="s3">&lt;</span><span class="s4">li</span><span class="s1"> </span><span class="s2">class</span><span class="s3">=</span><span class="s6">"flex items-start gap-3"</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                                </span></span><span class="s3">&lt;</span><span class="s4">i</span><span class="s5"> </span><span class="s2">data-lucide</span><span class="s3">=</span><span class="s1">"check-circle-2"</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"w-5 h-5 text-green-500 shrink-0 mt-0.5"</span><span class="s3">&gt;&lt;/</span><span class="s4">i</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                                </span></span><span class="s3">&lt;</span><span class="s4">span</span><span class="s3">&gt;&lt;</span><span class="s4">strong</span><span class="s3">&gt;</span><span class="s1">Automation Frameworks:</span><span class="s3">&lt;/</span><span class="s4">strong</span><span class="s3">&gt;</span><span class="s1"> Engineered scalable test frameworks using Playwright &amp; Selenium (JavaScript), significantly reducing manual regression testing time and improving release reliability.</span><span class="s3">&lt;/</span><span class="s4">span</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                            </span></span><span class="s3">&lt;/</span><span class="s4">li</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                            </span></span><span class="s3">&lt;</span><span class="s4">li</span><span class="s1"> </span><span class="s2">class</span><span class="s3">=</span><span class="s6">"flex items-start gap-3"</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                                </span></span><span class="s3">&lt;</span><span class="s4">i</span><span class="s5"> </span><span class="s2">data-lucide</span><span class="s3">=</span><span class="s1">"check-circle-2"</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"w-5 h-5 text-green-500 shrink-0 mt-0.5"</span><span class="s3">&gt;&lt;/</span><span class="s4">i</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                                </span></span><span class="s3">&lt;</span><span class="s4">span</span><span class="s3">&gt;&lt;</span><span class="s4">strong</span><span class="s3">&gt;</span><span class="s1">CI/CD Integration:</span><span class="s3">&lt;/</span><span class="s4">strong</span><span class="s3">&gt;</span><span class="s1"> Integrated automated test pipelines into Jenkins workflows, enabling nightly builds and faster feedback loops for development teams.</span><span class="s3">&lt;/</span><span class="s4">span</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                            </span></span><span class="s3">&lt;/</span><span class="s4">li</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                            </span></span><span class="s3">&lt;</span><span class="s4">li</span><span class="s1"> </span><span class="s2">class</span><span class="s3">=</span><span class="s6">"flex items-start gap-3"</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                                </span></span><span class="s3">&lt;</span><span class="s4">i</span><span class="s5"> </span><span class="s2">data-lucide</span><span class="s3">=</span><span class="s1">"check-circle-2"</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"w-5 h-5 text-green-500 shrink-0 mt-0.5"</span><span class="s3">&gt;&lt;/</span><span class="s4">i</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                                </span></span><span class="s3">&lt;</span><span class="s4">span</span><span class="s3">&gt;&lt;</span><span class="s4">strong</span><span class="s3">&gt;</span><span class="s1">API Engineering:</span><span class="s3">&lt;/</span><span class="s4">strong</span><span class="s3">&gt;</span><span class="s1"> Developed robust API testing suites using Postman &amp; RestAssured to validate payload integrity, status codes, and backend logic performance.</span><span class="s3">&lt;/</span><span class="s4">span</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                            </span></span><span class="s3">&lt;/</span><span class="s4">li</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                            </span></span><span class="s3">&lt;</span><span class="s4">li</span><span class="s1"> </span><span class="s2">class</span><span class="s3">=</span><span class="s6">"flex items-start gap-3"</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                                </span></span><span class="s3">&lt;</span><span class="s4">i</span><span class="s5"> </span><span class="s2">data-lucide</span><span class="s3">=</span><span class="s1">"check-circle-2"</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"w-5 h-5 text-green-500 shrink-0 mt-0.5"</span><span class="s3">&gt;&lt;/</span><span class="s4">i</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                                </span></span><span class="s3">&lt;</span><span class="s4">span</span><span class="s3">&gt;&lt;</span><span class="s4">strong</span><span class="s3">&gt;</span><span class="s1">Database Validation:</span><span class="s3">&lt;/</span><span class="s4">strong</span><span class="s3">&gt;</span><span class="s1"> Executed complex SQL queries to verify data integrity across MySQL and PostgreSQL databases, ensuring accurate transaction processing for critical FinTech applications.</span><span class="s3">&lt;/</span><span class="s4">span</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                            </span></span><span class="s3">&lt;/</span><span class="s4">li</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                            </span></span><span class="s3">&lt;</span><span class="s4">li</span><span class="s1"> </span><span class="s2">class</span><span class="s3">=</span><span class="s6">"flex items-start gap-3"</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                                </span></span><span class="s3">&lt;</span><span class="s4">i</span><span class="s5"> </span><span class="s2">data-lucide</span><span class="s3">=</span><span class="s1">"check-circle-2"</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"w-5 h-5 text-green-500 shrink-0 mt-0.5"</span><span class="s3">&gt;&lt;/</span><span class="s4">i</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                                </span></span><span class="s3">&lt;</span><span class="s4">span</span><span class="s3">&gt;&lt;</span><span class="s4">strong</span><span class="s3">&gt;</span><span class="s1">Test Strategy &amp; Documentation:</span><span class="s3">&lt;/</span><span class="s4">strong</span><span class="s3">&gt;</span><span class="s1"> Created comprehensive test plans and documentation for key projects (StyleHint, Cenomi), facilitating smoother knowledge transfer and audit compliance.</span><span class="s3">&lt;/</span><span class="s4">span</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                            </span></span><span class="s3">&lt;/</span><span class="s4">li</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                            </span></span><span class="s3">&lt;</span><span class="s4">li</span><span class="s1"> </span><span class="s2">class</span><span class="s3">=</span><span class="s6">"flex items-start gap-3"</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                                </span></span><span class="s3">&lt;</span><span class="s4">i</span><span class="s5"> </span><span class="s2">data-lucide</span><span class="s3">=</span><span class="s1">"check-circle-2"</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"w-5 h-5 text-green-500 shrink-0 mt-0.5"</span><span class="s3">&gt;&lt;/</span><span class="s4">i</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                                </span></span><span class="s3">&lt;</span><span class="s4">span</span><span class="s3">&gt;&lt;</span><span class="s4">strong</span><span class="s3">&gt;</span><span class="s1">Cross-Functional Collaboration:</span><span class="s3">&lt;/</span><span class="s4">strong</span><span class="s3">&gt;</span><span class="s1"> Partnered closely with developers and product managers in Agile environments to identify logical defects early and ensure high code stability before deployment.</span><span class="s3">&lt;/</span><span class="s4">span</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                            </span></span><span class="s3">&lt;/</span><span class="s4">li</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                        </span></span><span class="s3">&lt;/</span><span class="s4">ul</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span></span><span class="s3">&lt;/</span><span class="s4">div</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span></span><span class="s3">&lt;/</span><span class="s4">div</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s3">&lt;/</span><span class="s4">div</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s3">&lt;/</span><span class="s4">div</span><span class="s3">&gt;</span></p>
-<p class="p1"><span class="s5"><span class="Apple-converted-space">    </span></span><span class="s3">&lt;/</span><span class="s1">section</span><span class="s3">&gt;</span></p>
-<p class="p6"><span class="s10"></span><br></p>
-<p class="p7"><span class="s5"><span class="Apple-converted-space">    </span></span><span class="s1">&lt;!-- PROJECTS SECTION --&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">    </span></span><span class="s3">&lt;</span><span class="s4">section</span><span class="s5"> </span><span class="s2">id</span><span class="s3">=</span><span class="s1">"projects"</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"py-20 bg-white"</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">        </span></span><span class="s3">&lt;</span><span class="s4">div</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"max-w-6xl mx-auto px-4"</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">            </span></span><span class="s3">&lt;</span><span class="s4">h2</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"text-3xl font-bold text-slate-900 mb-4 text-center"</span><span class="s3">&gt;</span><span class="s5">Key Projects</span><span class="s3">&lt;/</span><span class="s4">h2</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s3">&lt;</span><span class="s4">p</span><span class="s1"> </span><span class="s2">class</span><span class="s3">=</span><span class="s6">"text-slate-500 text-center mb-12 max-w-2xl mx-auto"</span><span class="s3">&gt;</span><span class="s1">Selected works demonstrating expertise in various domains including E-Commerce, FinTech, and Real Estate.</span><span class="s3">&lt;/</span><span class="s4">p</span><span class="s3">&gt;</span></p>
-<p class="p6"><span class="s10"></span><br></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">            </span></span><span class="s3">&lt;</span><span class="s4">div</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"grid grid-cols-1 md:grid-cols-2 gap-8"</span><span class="s3">&gt;</span></p>
-<p class="p6"><span class="s1"><span class="Apple-converted-space">                </span></span></p>
-<p class="p7"><span class="s5"><span class="Apple-converted-space">                </span></span><span class="s1">&lt;!-- Project 1 --&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                </span></span><span class="s3">&lt;</span><span class="s4">div</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"project-card bg-white rounded-2xl border border-slate-200 overflow-hidden fade-up"</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                    </span></span><span class="s3">&lt;</span><span class="s4">div</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"h-2 bg-gradient-to-r from-red-500 to-red-600"</span><span class="s3">&gt;&lt;/</span><span class="s4">div</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span></span><span class="s3">&lt;</span><span class="s4">div</span><span class="s1"> </span><span class="s2">class</span><span class="s3">=</span><span class="s6">"p-8"</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                        </span></span><span class="s3">&lt;</span><span class="s4">div</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"flex justify-between items-start mb-4"</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                            </span></span><span class="s3">&lt;</span><span class="s4">div</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                                </span></span><span class="s3">&lt;</span><span class="s4">h3</span><span class="s1"> </span><span class="s2">class</span><span class="s3">=</span><span class="s6">"text-xl font-bold text-slate-900"</span><span class="s3">&gt;</span><span class="s1">StyleHint (Uniqlo)</span><span class="s3">&lt;/</span><span class="s4">h3</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                                </span></span><span class="s3">&lt;</span><span class="s4">span</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"text-xs font-bold tracking-wide text-red-600 uppercase"</span><span class="s3">&gt;</span><span class="s5">E-Commerce / Social</span><span class="s3">&lt;/</span><span class="s4">span</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                            </span></span><span class="s3">&lt;/</span><span class="s4">div</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                            </span></span><span class="s3">&lt;</span><span class="s4">i</span><span class="s5"> </span><span class="s2">data-lucide</span><span class="s3">=</span><span class="s1">"shopping-bag"</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"w-6 h-6 text-slate-300"</span><span class="s3">&gt;&lt;/</span><span class="s4">i</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                        </span></span><span class="s3">&lt;/</span><span class="s4">div</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                        </span></span><span class="s3">&lt;</span><span class="s4">p</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"text-slate-600 mb-6 leading-relaxed"</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                            </span>A global social commerce platform. Performed end-to-end testing of social feed integrations and checkout flows. Ensured UI consistency across iOS and Android platforms for global brand standards.</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                        </span></span><span class="s3">&lt;/</span><span class="s4">p</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                        </span></span><span class="s3">&lt;</span><span class="s4">div</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"flex gap-2 text-xs font-mono text-slate-500"</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                            </span></span><span class="s3">&lt;</span><span class="s4">span</span><span class="s1"> </span><span class="s2">class</span><span class="s3">=</span><span class="s6">"bg-slate-100 px-2 py-1 rounded"</span><span class="s3">&gt;</span><span class="s1">E-Commerce</span><span class="s3">&lt;/</span><span class="s4">span</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                            </span></span><span class="s3">&lt;</span><span class="s4">span</span><span class="s1"> </span><span class="s2">class</span><span class="s3">=</span><span class="s6">"bg-slate-100 px-2 py-1 rounded"</span><span class="s3">&gt;</span><span class="s1">Mobile Automation</span><span class="s3">&lt;/</span><span class="s4">span</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                        </span></span><span class="s3">&lt;/</span><span class="s4">div</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span></span><span class="s3">&lt;/</span><span class="s4">div</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span></span><span class="s3">&lt;/</span><span class="s4">div</span><span class="s3">&gt;</span></p>
-<p class="p6"><span class="s10"></span><br></p>
-<p class="p7"><span class="s5"><span class="Apple-converted-space">                </span></span><span class="s1">&lt;!-- Project 2 --&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                </span></span><span class="s3">&lt;</span><span class="s4">div</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"project-card bg-white rounded-2xl border border-slate-200 overflow-hidden fade-up"</span><span class="s5"> </span><span class="s2">style</span><span class="s3">=</span><span class="s1">"transition-delay: 100ms;"</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                    </span></span><span class="s3">&lt;</span><span class="s4">div</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"h-2 bg-gradient-to-r from-blue-500 to-cyan-500"</span><span class="s3">&gt;&lt;/</span><span class="s4">div</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span></span><span class="s3">&lt;</span><span class="s4">div</span><span class="s1"> </span><span class="s2">class</span><span class="s3">=</span><span class="s6">"p-8"</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                        </span></span><span class="s3">&lt;</span><span class="s4">div</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"flex justify-between items-start mb-4"</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                            </span></span><span class="s3">&lt;</span><span class="s4">div</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                                </span></span><span class="s3">&lt;</span><span class="s4">h3</span><span class="s1"> </span><span class="s2">class</span><span class="s3">=</span><span class="s6">"text-xl font-bold text-slate-900"</span><span class="s3">&gt;</span><span class="s1">Finbook</span><span class="s3">&lt;/</span><span class="s4">h3</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                                </span></span><span class="s3">&lt;</span><span class="s4">span</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"text-xs font-bold tracking-wide text-blue-600 uppercase"</span><span class="s3">&gt;</span><span class="s5">FinTech</span><span class="s3">&lt;/</span><span class="s4">span</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                            </span></span><span class="s3">&lt;/</span><span class="s4">div</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                            </span></span><span class="s3">&lt;</span><span class="s4">i</span><span class="s5"> </span><span class="s2">data-lucide</span><span class="s3">=</span><span class="s1">"landmark"</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"w-6 h-6 text-slate-300"</span><span class="s3">&gt;&lt;/</span><span class="s4">i</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                        </span></span><span class="s3">&lt;/</span><span class="s4">div</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                        </span></span><span class="s3">&lt;</span><span class="s4">p</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"text-slate-600 mb-6 leading-relaxed"</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                            </span>Secure finance ledger application. Developed automated API tests to validate real-time data synchronization and transaction integrity. Verified compliance with strict security protocols.</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                        </span></span><span class="s3">&lt;/</span><span class="s4">p</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                        </span></span><span class="s3">&lt;</span><span class="s4">div</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"flex gap-2 text-xs font-mono text-slate-500"</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                            </span></span><span class="s3">&lt;</span><span class="s4">span</span><span class="s1"> </span><span class="s2">class</span><span class="s3">=</span><span class="s6">"bg-slate-100 px-2 py-1 rounded"</span><span class="s3">&gt;</span><span class="s1">API Testing</span><span class="s3">&lt;/</span><span class="s4">span</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                            </span></span><span class="s3">&lt;</span><span class="s4">span</span><span class="s1"> </span><span class="s2">class</span><span class="s3">=</span><span class="s6">"bg-slate-100 px-2 py-1 rounded"</span><span class="s3">&gt;</span><span class="s1">Security</span><span class="s3">&lt;/</span><span class="s4">span</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                        </span></span><span class="s3">&lt;/</span><span class="s4">div</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span></span><span class="s3">&lt;/</span><span class="s4">div</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span></span><span class="s3">&lt;/</span><span class="s4">div</span><span class="s3">&gt;</span></p>
-<p class="p6"><span class="s10"></span><br></p>
-<p class="p7"><span class="s5"><span class="Apple-converted-space">                </span></span><span class="s1">&lt;!-- Project 3 --&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                </span></span><span class="s3">&lt;</span><span class="s4">div</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"project-card bg-white rounded-2xl border border-slate-200 overflow-hidden fade-up"</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                    </span></span><span class="s3">&lt;</span><span class="s4">div</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"h-2 bg-gradient-to-r from-emerald-500 to-green-500"</span><span class="s3">&gt;&lt;/</span><span class="s4">div</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span></span><span class="s3">&lt;</span><span class="s4">div</span><span class="s1"> </span><span class="s2">class</span><span class="s3">=</span><span class="s6">"p-8"</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                        </span></span><span class="s3">&lt;</span><span class="s4">div</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"flex justify-between items-start mb-4"</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                            </span></span><span class="s3">&lt;</span><span class="s4">div</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                                </span></span><span class="s3">&lt;</span><span class="s4">h3</span><span class="s1"> </span><span class="s2">class</span><span class="s3">=</span><span class="s6">"text-xl font-bold text-slate-900"</span><span class="s3">&gt;</span><span class="s1">Cenomi</span><span class="s3">&lt;/</span><span class="s4">h3</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                                </span></span><span class="s3">&lt;</span><span class="s4">span</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"text-xs font-bold tracking-wide text-emerald-600 uppercase"</span><span class="s3">&gt;</span><span class="s5">Real Estate</span><span class="s3">&lt;/</span><span class="s4">span</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                            </span></span><span class="s3">&lt;/</span><span class="s4">div</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                            </span></span><span class="s3">&lt;</span><span class="s4">i</span><span class="s5"> </span><span class="s2">data-lucide</span><span class="s3">=</span><span class="s1">"building-2"</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"w-6 h-6 text-slate-300"</span><span class="s3">&gt;&lt;/</span><span class="s4">i</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                        </span></span><span class="s3">&lt;/</span><span class="s4">div</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                        </span></span><span class="s3">&lt;</span><span class="s4">p</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"text-slate-600 mb-6 leading-relaxed"</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                            </span>Property listing platform. Managed defect tracking for listing management tools. Validated search algorithms and optimized filtering logic to ensure accurate query results for users.</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                        </span></span><span class="s3">&lt;/</span><span class="s4">p</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                        </span></span><span class="s3">&lt;</span><span class="s4">div</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"flex gap-2 text-xs font-mono text-slate-500"</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                            </span></span><span class="s3">&lt;</span><span class="s4">span</span><span class="s1"> </span><span class="s2">class</span><span class="s3">=</span><span class="s6">"bg-slate-100 px-2 py-1 rounded"</span><span class="s3">&gt;</span><span class="s1">Search Algorithms</span><span class="s3">&lt;/</span><span class="s4">span</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                            </span></span><span class="s3">&lt;</span><span class="s4">span</span><span class="s1"> </span><span class="s2">class</span><span class="s3">=</span><span class="s6">"bg-slate-100 px-2 py-1 rounded"</span><span class="s3">&gt;</span><span class="s1">Data Logic</span><span class="s3">&lt;/</span><span class="s4">span</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                        </span></span><span class="s3">&lt;/</span><span class="s4">div</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span></span><span class="s3">&lt;/</span><span class="s4">div</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span></span><span class="s3">&lt;/</span><span class="s4">div</span><span class="s3">&gt;</span></p>
-<p class="p6"><span class="s10"></span><br></p>
-<p class="p7"><span class="s5"><span class="Apple-converted-space">                </span></span><span class="s1">&lt;!-- Project 4 --&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                </span></span><span class="s3">&lt;</span><span class="s4">div</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"project-card bg-white rounded-2xl border border-slate-200 overflow-hidden fade-up"</span><span class="s5"> </span><span class="s2">style</span><span class="s3">=</span><span class="s1">"transition-delay: 100ms;"</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                    </span></span><span class="s3">&lt;</span><span class="s4">div</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"h-2 bg-gradient-to-r from-purple-500 to-pink-500"</span><span class="s3">&gt;&lt;/</span><span class="s4">div</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span></span><span class="s3">&lt;</span><span class="s4">div</span><span class="s1"> </span><span class="s2">class</span><span class="s3">=</span><span class="s6">"p-8"</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                        </span></span><span class="s3">&lt;</span><span class="s4">div</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"flex justify-between items-start mb-4"</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                            </span></span><span class="s3">&lt;</span><span class="s4">div</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                                </span></span><span class="s3">&lt;</span><span class="s4">h3</span><span class="s1"> </span><span class="s2">class</span><span class="s3">=</span><span class="s6">"text-xl font-bold text-slate-900"</span><span class="s3">&gt;</span><span class="s1">Alumni Management</span><span class="s3">&lt;/</span><span class="s4">h3</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                                </span></span><span class="s3">&lt;</span><span class="s4">span</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"text-xs font-bold tracking-wide text-purple-600 uppercase"</span><span class="s3">&gt;</span><span class="s5">Community Platform</span><span class="s3">&lt;/</span><span class="s4">span</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                            </span></span><span class="s3">&lt;/</span><span class="s4">div</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                            </span></span><span class="s3">&lt;</span><span class="s4">i</span><span class="s5"> </span><span class="s2">data-lucide</span><span class="s3">=</span><span class="s1">"users"</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"w-6 h-6 text-slate-300"</span><span class="s3">&gt;&lt;/</span><span class="s4">i</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                        </span></span><span class="s3">&lt;/</span><span class="s4">div</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                        </span></span><span class="s3">&lt;</span><span class="s4">p</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"text-slate-600 mb-6 leading-relaxed"</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                            </span>Internal community tool. Streamlined user onboarding workflows for graduates. Tested and validated event management modules to ensure seamless RSVP tracking.</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                        </span></span><span class="s3">&lt;/</span><span class="s4">p</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                        </span></span><span class="s3">&lt;</span><span class="s4">div</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"flex gap-2 text-xs font-mono text-slate-500"</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                            </span></span><span class="s3">&lt;</span><span class="s4">span</span><span class="s1"> </span><span class="s2">class</span><span class="s3">=</span><span class="s6">"bg-slate-100 px-2 py-1 rounded"</span><span class="s3">&gt;</span><span class="s1">UX Flows</span><span class="s3">&lt;/</span><span class="s4">span</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                            </span></span><span class="s3">&lt;</span><span class="s4">span</span><span class="s1"> </span><span class="s2">class</span><span class="s3">=</span><span class="s6">"bg-slate-100 px-2 py-1 rounded"</span><span class="s3">&gt;</span><span class="s1">Event Systems</span><span class="s3">&lt;/</span><span class="s4">span</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                        </span></span><span class="s3">&lt;/</span><span class="s4">div</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span></span><span class="s3">&lt;/</span><span class="s4">div</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span></span><span class="s3">&lt;/</span><span class="s4">div</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s3">&lt;/</span><span class="s4">div</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s3">&lt;/</span><span class="s4">div</span><span class="s3">&gt;</span></p>
-<p class="p1"><span class="s5"><span class="Apple-converted-space">    </span></span><span class="s3">&lt;/</span><span class="s1">section</span><span class="s3">&gt;</span></p>
-<p class="p6"><span class="s10"></span><br></p>
-<p class="p7"><span class="s5"><span class="Apple-converted-space">    </span></span><span class="s1">&lt;!-- EDUCATION &amp; COMMUNITY --&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">    </span></span><span class="s3">&lt;</span><span class="s4">section</span><span class="s5"> </span><span class="s2">id</span><span class="s3">=</span><span class="s1">"education"</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"py-20 bg-slate-50"</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">        </span></span><span class="s3">&lt;</span><span class="s4">div</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"max-w-4xl mx-auto px-4"</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">            </span></span><span class="s3">&lt;</span><span class="s4">h2</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"text-3xl font-bold text-slate-900 mb-12 flex items-center gap-3"</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                </span></span><span class="s3">&lt;</span><span class="s4">i</span><span class="s5"> </span><span class="s2">data-lucide</span><span class="s3">=</span><span class="s1">"graduation-cap"</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"w-8 h-8 text-blue-600"</span><span class="s3">&gt;&lt;/</span><span class="s4">i</span><span class="s3">&gt;</span><span class="s5"> Education</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s3">&lt;/</span><span class="s4">h2</span><span class="s3">&gt;</span></p>
-<p class="p6"><span class="s10"></span><br></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">            </span></span><span class="s3">&lt;</span><span class="s4">div</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"space-y-8 fade-up"</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span></span><span class="s12">&lt;!-- Masters --&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                </span></span><span class="s3">&lt;</span><span class="s4">div</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"bg-white p-8 rounded-2xl border border-slate-200 shadow-sm relative overflow-hidden"</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                    </span></span><span class="s3">&lt;</span><span class="s4">div</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"absolute top-0 right-0 p-4 opacity-10"</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                        </span></span><span class="s3">&lt;</span><span class="s4">i</span><span class="s5"> </span><span class="s2">data-lucide</span><span class="s3">=</span><span class="s1">"book-open"</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"w-32 h-32 text-blue-900"</span><span class="s3">&gt;&lt;/</span><span class="s4">i</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span></span><span class="s3">&lt;/</span><span class="s4">div</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span></span><span class="s3">&lt;</span><span class="s4">div</span><span class="s1"> </span><span class="s2">class</span><span class="s3">=</span><span class="s6">"relative z-10"</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                        </span></span><span class="s3">&lt;</span><span class="s4">div</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"flex flex-col sm:flex-row justify-between items-start mb-2"</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                            </span></span><span class="s3">&lt;</span><span class="s4">h3</span><span class="s1"> </span><span class="s2">class</span><span class="s3">=</span><span class="s6">"text-xl font-bold text-slate-900 pr-4"</span><span class="s3">&gt;</span><span class="s1">MSc Management of Information Systems &amp; Digital Innovation</span><span class="s3">&lt;/</span><span class="s4">h3</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                            </span></span><span class="s3">&lt;</span><span class="s4">span</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"text-sm font-semibold text-blue-600 bg-blue-50 px-3 py-1 rounded-full mt-2 sm:mt-0 whitespace-nowrap"</span><span class="s3">&gt;</span><span class="s5">2025 - 2026</span><span class="s3">&lt;/</span><span class="s4">span</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                        </span></span><span class="s3">&lt;/</span><span class="s4">div</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                        </span></span><span class="s3">&lt;</span><span class="s4">p</span><span class="s1"> </span><span class="s2">class</span><span class="s3">=</span><span class="s6">"text-lg text-slate-700 mb-6"</span><span class="s3">&gt;</span><span class="s1">University of Leeds, UK</span><span class="s3">&lt;/</span><span class="s4">p</span><span class="s3">&gt;</span></p>
-<p class="p6"><span class="s1"><span class="Apple-converted-space">                        </span></span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                        </span></span><span class="s3">&lt;</span><span class="s4">div</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"bg-slate-50 p-6 rounded-xl border border-slate-100"</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                            </span></span><span class="s3">&lt;</span><span class="s4">h4</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"text-sm font-bold text-slate-900 uppercase tracking-wide mb-4 flex items-center gap-2"</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                                </span></span><span class="s3">&lt;</span><span class="s4">i</span><span class="s1"> </span><span class="s2">data-lucide</span><span class="s3">=</span><span class="s6">"lightbulb"</span><span class="s1"> </span><span class="s2">class</span><span class="s3">=</span><span class="s6">"w-4 h-4 text-amber-500"</span><span class="s3">&gt;&lt;/</span><span class="s4">i</span><span class="s3">&gt;</span><span class="s1"> Key Modules &amp; Insights</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                            </span></span><span class="s3">&lt;/</span><span class="s4">h4</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                            </span></span><span class="s3">&lt;</span><span class="s4">ul</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"space-y-4 text-sm text-slate-600"</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                                </span></span><span class="s3">&lt;</span><span class="s4">li</span><span class="s1"> </span><span class="s2">class</span><span class="s3">=</span><span class="s6">"flex gap-3"</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                                    </span></span><span class="s3">&lt;</span><span class="s4">div</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"min-w-[4px] bg-blue-500 rounded-full mt-1.5 h-1.5"</span><span class="s3">&gt;&lt;/</span><span class="s4">div</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                                    </span></span><span class="s3">&lt;</span><span class="s4">div</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                                        </span></span><span class="s3">&lt;</span><span class="s4">strong</span><span class="s1"> </span><span class="s2">class</span><span class="s3">=</span><span class="s6">"text-slate-900 block mb-1"</span><span class="s3">&gt;</span><span class="s1">Business Analytics &amp; Decision Sciences</span><span class="s3">&lt;/</span><span class="s4">strong</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                                        </span>Acquired advanced skills in data-driven decision-making and predictive modeling to solve complex business challenges.</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                                    </span></span><span class="s3">&lt;/</span><span class="s4">div</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                                </span></span><span class="s3">&lt;/</span><span class="s4">li</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                                </span></span><span class="s3">&lt;</span><span class="s4">li</span><span class="s1"> </span><span class="s2">class</span><span class="s3">=</span><span class="s6">"flex gap-3"</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                                    </span></span><span class="s3">&lt;</span><span class="s4">div</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"min-w-[4px] bg-indigo-500 rounded-full mt-1.5 h-1.5"</span><span class="s3">&gt;&lt;/</span><span class="s4">div</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                                    </span></span><span class="s3">&lt;</span><span class="s4">div</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                                        </span></span><span class="s3">&lt;</span><span class="s4">strong</span><span class="s1"> </span><span class="s2">class</span><span class="s3">=</span><span class="s6">"text-slate-900 block mb-1"</span><span class="s3">&gt;</span><span class="s1">Human-Centred AI</span><span class="s3">&lt;/</span><span class="s4">strong</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                                        </span>Explored ethical deployment strategies and user-centric design principles for artificial intelligence systems.</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                                    </span></span><span class="s3">&lt;/</span><span class="s4">div</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                                </span></span><span class="s3">&lt;/</span><span class="s4">li</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                                </span></span><span class="s3">&lt;</span><span class="s4">li</span><span class="s1"> </span><span class="s2">class</span><span class="s3">=</span><span class="s6">"flex gap-3"</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                                    </span></span><span class="s3">&lt;</span><span class="s4">div</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"min-w-[4px] bg-purple-500 rounded-full mt-1.5 h-1.5"</span><span class="s3">&gt;&lt;/</span><span class="s4">div</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                                    </span></span><span class="s3">&lt;</span><span class="s4">div</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                                        </span></span><span class="s3">&lt;</span><span class="s4">strong</span><span class="s1"> </span><span class="s2">class</span><span class="s3">=</span><span class="s6">"text-slate-900 block mb-1"</span><span class="s3">&gt;</span><span class="s1">Digital Transformation Management</span><span class="s3">&lt;/</span><span class="s4">strong</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                                        </span>Developed strategies to align IT infrastructure with organizational business goals and manage large-scale digital change.</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                                    </span></span><span class="s3">&lt;/</span><span class="s4">div</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                                </span></span><span class="s3">&lt;/</span><span class="s4">li</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                                </span></span><span class="s3">&lt;</span><span class="s4">li</span><span class="s1"> </span><span class="s2">class</span><span class="s3">=</span><span class="s6">"flex gap-3"</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                                    </span></span><span class="s3">&lt;</span><span class="s4">div</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"min-w-[4px] bg-pink-500 rounded-full mt-1.5 h-1.5"</span><span class="s3">&gt;&lt;/</span><span class="s4">div</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                                    </span></span><span class="s3">&lt;</span><span class="s4">div</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                                        </span></span><span class="s3">&lt;</span><span class="s4">strong</span><span class="s1"> </span><span class="s2">class</span><span class="s3">=</span><span class="s6">"text-slate-900 block mb-1"</span><span class="s3">&gt;</span><span class="s1">Evidence Based Consultancy</span><span class="s3">&lt;/</span><span class="s4">strong</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                                        </span>Applied consulting frameworks and data-backed methodologies to diagnose organizational problems and recommend IT solutions.</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                                    </span></span><span class="s3">&lt;/</span><span class="s4">div</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                                </span></span><span class="s3">&lt;/</span><span class="s4">li</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                                </span></span><span class="s3">&lt;</span><span class="s4">li</span><span class="s1"> </span><span class="s2">class</span><span class="s3">=</span><span class="s6">"flex gap-3"</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                                    </span></span><span class="s3">&lt;</span><span class="s4">div</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"min-w-[4px] bg-emerald-500 rounded-full mt-1.5 h-1.5"</span><span class="s3">&gt;&lt;/</span><span class="s4">div</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                                    </span></span><span class="s3">&lt;</span><span class="s4">div</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                                        </span></span><span class="s3">&lt;</span><span class="s4">strong</span><span class="s1"> </span><span class="s2">class</span><span class="s3">=</span><span class="s6">"text-slate-900 block mb-1"</span><span class="s3">&gt;</span><span class="s1">Innovations in Operations &amp; IS</span><span class="s3">&lt;/</span><span class="s4">strong</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                                        </span>Analyzed emerging technologies to optimize operational processes and drive efficiency in complex enterprise systems.</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                                    </span></span><span class="s3">&lt;/</span><span class="s4">div</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                                </span></span><span class="s3">&lt;/</span><span class="s4">li</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                            </span></span><span class="s3">&lt;/</span><span class="s4">ul</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                        </span></span><span class="s3">&lt;/</span><span class="s4">div</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span></span><span class="s3">&lt;/</span><span class="s4">div</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span></span><span class="s3">&lt;/</span><span class="s4">div</span><span class="s3">&gt;</span></p>
-<p class="p6"><span class="s10"></span><br></p>
-<p class="p7"><span class="s5"><span class="Apple-converted-space">                </span></span><span class="s1">&lt;!-- Bachelors --&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                </span></span><span class="s3">&lt;</span><span class="s4">div</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"bg-white p-8 rounded-2xl border border-slate-200 shadow-sm"</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                    </span></span><span class="s3">&lt;</span><span class="s4">div</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"flex flex-col sm:flex-row justify-between items-start mb-2"</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                        </span></span><span class="s3">&lt;</span><span class="s4">h3</span><span class="s1"> </span><span class="s2">class</span><span class="s3">=</span><span class="s6">"text-xl font-bold text-slate-900 pr-4"</span><span class="s3">&gt;</span><span class="s1">B.Tech in Computer Science</span><span class="s3">&lt;/</span><span class="s4">h3</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                        </span></span><span class="s3">&lt;</span><span class="s4">span</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"text-sm font-semibold text-slate-500 bg-slate-50 px-3 py-1 rounded-full mt-2 sm:mt-0 whitespace-nowrap"</span><span class="s3">&gt;</span><span class="s5">2018 - 2022</span><span class="s3">&lt;/</span><span class="s4">span</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span></span><span class="s3">&lt;/</span><span class="s4">div</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span></span><span class="s3">&lt;</span><span class="s4">p</span><span class="s1"> </span><span class="s2">class</span><span class="s3">=</span><span class="s6">"text-lg text-slate-700 mb-2"</span><span class="s3">&gt;</span><span class="s1">College of Engineering, Chengannur</span><span class="s3">&lt;/</span><span class="s4">p</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                    </span></span><span class="s3">&lt;</span><span class="s4">div</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"flex flex-wrap gap-4 text-sm text-slate-600 mt-4"</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                        </span></span><span class="s3">&lt;</span><span class="s4">span</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"inline-flex items-center gap-1 bg-slate-50 px-3 py-1.5 rounded-lg border border-slate-100"</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                            </span></span><span class="s3">&lt;</span><span class="s4">i</span><span class="s1"> </span><span class="s2">data-lucide</span><span class="s3">=</span><span class="s6">"award"</span><span class="s1"> </span><span class="s2">class</span><span class="s3">=</span><span class="s6">"w-4 h-4 text-amber-500"</span><span class="s3">&gt;&lt;/</span><span class="s4">i</span><span class="s3">&gt;</span><span class="s1"> CGPA: 7.58/10</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                        </span></span><span class="s3">&lt;/</span><span class="s4">span</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                        </span></span><span class="s3">&lt;</span><span class="s4">span</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"inline-flex items-center gap-1 bg-slate-50 px-3 py-1.5 rounded-lg border border-slate-100"</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                            </span></span><span class="s3">&lt;</span><span class="s4">i</span><span class="s1"> </span><span class="s2">data-lucide</span><span class="s3">=</span><span class="s6">"users"</span><span class="s1"> </span><span class="s2">class</span><span class="s3">=</span><span class="s6">"w-4 h-4 text-blue-500"</span><span class="s3">&gt;&lt;/</span><span class="s4">i</span><span class="s3">&gt;</span><span class="s1"> College Chairperson (2022)</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                        </span></span><span class="s3">&lt;/</span><span class="s4">span</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                        </span></span><span class="s3">&lt;</span><span class="s4">span</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"inline-flex items-center gap-1 bg-slate-50 px-3 py-1.5 rounded-lg border border-slate-100"</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                            </span></span><span class="s3">&lt;</span><span class="s4">i</span><span class="s1"> </span><span class="s2">data-lucide</span><span class="s3">=</span><span class="s6">"zap"</span><span class="s1"> </span><span class="s2">class</span><span class="s3">=</span><span class="s6">"w-4 h-4 text-yellow-500"</span><span class="s3">&gt;&lt;/</span><span class="s4">i</span><span class="s3">&gt;</span><span class="s1"> CTO of Innovation Centre (2021)</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                        </span></span><span class="s3">&lt;/</span><span class="s4">span</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span></span><span class="s3">&lt;/</span><span class="s4">div</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span></span><span class="s3">&lt;/</span><span class="s4">div</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s3">&lt;/</span><span class="s4">div</span><span class="s3">&gt;</span></p>
-<p class="p6"><span class="s10"></span><br></p>
-<p class="p7"><span class="s5"><span class="Apple-converted-space">            </span></span><span class="s1">&lt;!-- Leadership --&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">            </span></span><span class="s3">&lt;</span><span class="s4">div</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"mt-16 fade-up"</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                </span></span><span class="s3">&lt;</span><span class="s4">h3</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"text-xl font-bold text-slate-900 mb-6 flex items-center gap-2"</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span></span><span class="s3">&lt;</span><span class="s4">i</span><span class="s1"> </span><span class="s2">data-lucide</span><span class="s3">=</span><span class="s6">"heart-handshake"</span><span class="s1"> </span><span class="s2">class</span><span class="s3">=</span><span class="s6">"w-5 h-5 text-blue-600"</span><span class="s3">&gt;&lt;/</span><span class="s4">i</span><span class="s3">&gt;</span><span class="s1"> Leadership &amp; Community</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span></span><span class="s3">&lt;/</span><span class="s4">h3</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                </span></span><span class="s3">&lt;</span><span class="s4">div</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"grid grid-cols-1 md:grid-cols-2 gap-4"</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                    </span></span><span class="s3">&lt;</span><span class="s4">div</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"p-4 bg-white border border-slate-200 rounded-lg"</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                        </span></span><span class="s3">&lt;</span><span class="s4">h4</span><span class="s1"> </span><span class="s2">class</span><span class="s3">=</span><span class="s6">"font-bold text-slate-900"</span><span class="s3">&gt;</span><span class="s1">College Chairperson</span><span class="s3">&lt;/</span><span class="s4">h4</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                        </span></span><span class="s3">&lt;</span><span class="s4">p</span><span class="s1"> </span><span class="s2">class</span><span class="s3">=</span><span class="s6">"text-sm text-slate-600 mt-1"</span><span class="s3">&gt;</span><span class="s1">Led student union, organized tech/cultural events, acted as student-admin liaison.</span><span class="s3">&lt;/</span><span class="s4">p</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span></span><span class="s3">&lt;/</span><span class="s4">div</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                    </span></span><span class="s3">&lt;</span><span class="s4">div</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"p-4 bg-white border border-slate-200 rounded-lg"</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                        </span></span><span class="s3">&lt;</span><span class="s4">h4</span><span class="s1"> </span><span class="s2">class</span><span class="s3">=</span><span class="s6">"font-bold text-slate-900"</span><span class="s3">&gt;</span><span class="s1">CTO (IEDC)</span><span class="s3">&lt;/</span><span class="s4">h4</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                        </span></span><span class="s3">&lt;</span><span class="s4">p</span><span class="s1"> </span><span class="s2">class</span><span class="s3">=</span><span class="s6">"text-sm text-slate-600 mt-1"</span><span class="s3">&gt;</span><span class="s1">Directed technical initiatives and workshops at the Innovation &amp; Entrepreneurship Centre.</span><span class="s3">&lt;/</span><span class="s4">p</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span></span><span class="s3">&lt;/</span><span class="s4">div</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                    </span></span><span class="s3">&lt;</span><span class="s4">div</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"p-4 bg-white border border-slate-200 rounded-lg md:col-span-2"</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                        </span></span><span class="s3">&lt;</span><span class="s4">h4</span><span class="s1"> </span><span class="s2">class</span><span class="s3">=</span><span class="s6">"font-bold text-slate-900"</span><span class="s3">&gt;</span><span class="s1">NSS Volunteer</span><span class="s3">&lt;/</span><span class="s4">h4</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                        </span></span><span class="s3">&lt;</span><span class="s4">p</span><span class="s1"> </span><span class="s2">class</span><span class="s3">=</span><span class="s6">"text-sm text-slate-600 mt-1"</span><span class="s3">&gt;</span><span class="s1">Spearheaded community service: library setups, environmental awareness campaigns.</span><span class="s3">&lt;/</span><span class="s4">p</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span></span><span class="s3">&lt;/</span><span class="s4">div</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span></span><span class="s3">&lt;/</span><span class="s4">div</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s3">&lt;/</span><span class="s4">div</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s3">&lt;/</span><span class="s4">div</span><span class="s3">&gt;</span></p>
-<p class="p1"><span class="s5"><span class="Apple-converted-space">    </span></span><span class="s3">&lt;/</span><span class="s1">section</span><span class="s3">&gt;</span></p>
-<p class="p6"><span class="s10"></span><br></p>
-<p class="p7"><span class="s5"><span class="Apple-converted-space">    </span></span><span class="s1">&lt;!-- CONTACT SECTION --&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">    </span></span><span class="s3">&lt;</span><span class="s4">footer</span><span class="s5"> </span><span class="s2">id</span><span class="s3">=</span><span class="s1">"contact"</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"bg-slate-900 text-slate-300 py-20"</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">        </span></span><span class="s3">&lt;</span><span class="s4">div</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"max-w-4xl mx-auto px-4 text-center"</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s3">&lt;</span><span class="s4">h2</span><span class="s1"> </span><span class="s2">class</span><span class="s3">=</span><span class="s6">"text-3xl font-bold text-white mb-8"</span><span class="s3">&gt;</span><span class="s1">Ready to engineer the next solution?</span><span class="s3">&lt;/</span><span class="s4">h2</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">            </span></span><span class="s3">&lt;</span><span class="s4">div</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"flex flex-col md:flex-row justify-center items-center gap-8 mb-12"</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                </span></span><span class="s3">&lt;</span><span class="s4">a</span><span class="s5"> </span><span class="s2">href</span><span class="s3">=</span><span class="s1">"mailto:habelgeorge@gmail.com"</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"flex items-center gap-2 hover:text-blue-400 transition-colors"</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span></span><span class="s3">&lt;</span><span class="s4">i</span><span class="s1"> </span><span class="s2">data-lucide</span><span class="s3">=</span><span class="s6">"mail"</span><span class="s1"> </span><span class="s2">class</span><span class="s3">=</span><span class="s6">"w-5 h-5"</span><span class="s3">&gt;&lt;/</span><span class="s4">i</span><span class="s3">&gt;</span><span class="s1"> habelgeorge@gmail.com</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span></span><span class="s3">&lt;/</span><span class="s4">a</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                </span></span><span class="s3">&lt;</span><span class="s4">a</span><span class="s5"> </span><span class="s2">href</span><span class="s3">=</span><span class="s1">"tel:+447799804588"</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"flex items-center gap-2 hover:text-blue-400 transition-colors"</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span></span><span class="s3">&lt;</span><span class="s4">i</span><span class="s1"> </span><span class="s2">data-lucide</span><span class="s3">=</span><span class="s6">"phone"</span><span class="s1"> </span><span class="s2">class</span><span class="s3">=</span><span class="s6">"w-5 h-5"</span><span class="s3">&gt;&lt;/</span><span class="s4">i</span><span class="s3">&gt;</span><span class="s1"> +44 7799 804588</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span></span><span class="s3">&lt;/</span><span class="s4">a</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                </span></span><span class="s3">&lt;</span><span class="s4">a</span><span class="s5"> </span><span class="s2">href</span><span class="s3">=</span><span class="s1">"https://www.linkedin.com/in/habel-george-036346192"</span><span class="s5"> </span><span class="s2">target</span><span class="s3">=</span><span class="s1">"_blank"</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"flex items-center gap-2 hover:text-blue-400 transition-colors"</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span></span><span class="s3">&lt;</span><span class="s4">i</span><span class="s1"> </span><span class="s2">data-lucide</span><span class="s3">=</span><span class="s6">"linkedin"</span><span class="s1"> </span><span class="s2">class</span><span class="s3">=</span><span class="s6">"w-5 h-5"</span><span class="s3">&gt;&lt;/</span><span class="s4">i</span><span class="s3">&gt;</span><span class="s1"> LinkedIn</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span></span><span class="s3">&lt;/</span><span class="s4">a</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s3">&lt;/</span><span class="s4">div</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s3">&lt;</span><span class="s4">p</span><span class="s1"> </span><span class="s2">class</span><span class="s3">=</span><span class="s6">"text-sm text-slate-500"</span><span class="s3">&gt;</span><span class="s1">© 2025 Habel James George. Leeds, United Kingdom.</span><span class="s3">&lt;/</span><span class="s4">p</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s3">&lt;/</span><span class="s4">div</span><span class="s3">&gt;</span></p>
-<p class="p1"><span class="s5"><span class="Apple-converted-space">    </span></span><span class="s3">&lt;/</span><span class="s1">footer</span><span class="s3">&gt;</span></p>
-<p class="p6"><span class="s10"></span><br></p>
-<p class="p1"><span class="s5"><span class="Apple-converted-space">    </span></span><span class="s3">&lt;</span><span class="s1">script</span><span class="s3">&gt;</span></p>
-<p class="p7"><span class="s5"><span class="Apple-converted-space">        </span></span><span class="s1">// Initialize Icons</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span>lucide</span><span class="s8">.</span><span class="s1">createIcons</span><span class="s8">();</span></p>
-<p class="p6"><span class="s10"></span><br></p>
-<p class="p7"><span class="s5"><span class="Apple-converted-space">        </span></span><span class="s1">// Scroll Animation</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s7">const</span><span class="s1"> observer </span><span class="s8">=</span><span class="s1"> </span><span class="s7">new</span><span class="s1"> </span><span class="s13">IntersectionObserver</span><span class="s8">((</span><span class="s1">entries</span><span class="s8">)</span><span class="s1"> </span><span class="s8">=&gt;</span><span class="s1"> </span><span class="s8">{</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>entries</span><span class="s8">.</span><span class="s1">forEach</span><span class="s8">(</span><span class="s1">entry </span><span class="s8">=&gt;</span><span class="s1"> </span><span class="s8">{</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span></span><span class="s7">if</span><span class="s1"> </span><span class="s8">(</span><span class="s1">entry</span><span class="s8">.</span><span class="s1">isIntersecting</span><span class="s8">)</span><span class="s1"> </span><span class="s8">{</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>entry</span><span class="s8">.</span><span class="s1">target</span><span class="s8">.</span><span class="s1">classList</span><span class="s8">.</span><span class="s1">add</span><span class="s8">(</span><span class="s9">'visible'</span><span class="s8">);</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span></span><span class="s8">}</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s8">});</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s8">},</span><span class="s1"> </span><span class="s8">{</span><span class="s1"> threshold</span><span class="s8">:</span><span class="s1"> </span><span class="s14">0.1</span><span class="s1"> </span><span class="s8">});</span></p>
-<p class="p6"><span class="s10"></span><br></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span>document</span><span class="s8">.</span><span class="s1">querySelectorAll</span><span class="s8">(</span><span class="s9">'.fade-up'</span><span class="s8">).</span><span class="s1">forEach</span><span class="s8">((</span><span class="s1">el</span><span class="s8">)</span><span class="s1"> </span><span class="s8">=&gt;</span><span class="s1"> observer</span><span class="s8">.</span><span class="s1">observe</span><span class="s8">(</span><span class="s1">el</span><span class="s8">));</span></p>
-<p class="p1"><span class="s5"><span class="Apple-converted-space">    </span></span><span class="s3">&lt;/</span><span class="s1">script</span><span class="s3">&gt;</span></p>
-<p class="p1"><span class="s3">&lt;/</span><span class="s1">body</span><span class="s3">&gt;</span></p>
-<p class="p1"><span class="s3">&lt;/</span><span class="s1">html</span><span class="s3">&gt;</span></p>
+<body class="antialiased selection:bg-blue-100 selection:text-blue-900">
+
+    <!-- NAVIGATION -->
+    <nav class="fixed top-0 w-full bg-white/80 backdrop-blur-md border-b border-slate-200 z-50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex-shrink-0 flex items-center gap-2 cursor-pointer" onclick="window.scrollTo(0,0)">
+                    <div class="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center text-white font-bold">H</div>
+                    <span class="font-bold text-xl tracking-tight text-slate-800">Habel George</span>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#about" class="text-slate-600 hover:text-blue-600 font-medium transition-colors">About</a>
+                    <a href="#skills" class="text-slate-600 hover:text-blue-600 font-medium transition-colors">Skills</a>
+                    <a href="#experience" class="text-slate-600 hover:text-blue-600 font-medium transition-colors">Experience</a>
+                    <a href="#projects" class="text-slate-600 hover:text-blue-600 font-medium transition-colors">Projects</a>
+                    <a href="#education" class="text-slate-600 hover:text-blue-600 font-medium transition-colors">Education</a>
+                </div>
+                <div>
+                    <a href="#contact" class="px-5 py-2.5 bg-blue-600 text-white font-medium rounded-full hover:bg-blue-700 transition-all shadow-lg shadow-blue-600/20">
+                        Contact Me
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section id="about" class="pt-32 pb-20 lg:pt-48 lg:pb-32 px-4 max-w-6xl mx-auto">
+        <div class="text-center max-w-3xl mx-auto fade-up">
+            <div class="inline-block px-4 py-1.5 mb-6 rounded-full bg-blue-50 border border-blue-100 text-blue-600 text-sm font-semibold tracking-wide">
+                Software Engineer & Digital Innovator
+            </div>
+            <h1 class="text-5xl md:text-7xl font-extrabold text-slate-900 tracking-tight mb-6 leading-tight">
+                Building scalable <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">solutions</span> for complex problems.
+            </h1>
+            <p class="text-lg md:text-xl text-slate-600 mb-10 leading-relaxed">
+                Results-driven Engineer with <strong>2.5+ years</strong> of experience in SDLC, Automation, and CI/CD. Currently bridging the gap between technical engineering and digital strategy at the <strong>University of Leeds</strong>.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#projects" class="px-8 py-3.5 bg-slate-900 text-white font-semibold rounded-lg hover:bg-slate-800 transition-all flex items-center justify-center gap-2">
+                    View My Work <i data-lucide="arrow-down" class="w-4 h-4"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/habel-george-036346192" target="_blank" class="px-8 py-3.5 bg-white text-slate-700 border border-slate-300 font-semibold rounded-lg hover:bg-slate-50 transition-all flex items-center justify-center gap-2">
+                    <i data-lucide="linkedin" class="w-4 h-4"></i> LinkedIn
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section id="skills" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-slate-900 mb-12 text-center">Technical Arsenal</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Languages -->
+                <div class="fade-up p-6 rounded-2xl bg-slate-50 border border-slate-100">
+                    <div class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center mb-4 text-blue-600">
+                        <i data-lucide="code-2" class="w-5 h-5"></i>
+                    </div>
+                    <h3 class="font-bold text-lg mb-4">Languages</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="skill-tag px-3 py-1 bg-white border border-slate-200 rounded text-sm font-medium text-slate-600">JavaScript</span>
+                        <span class="skill-tag px-3 py-1 bg-white border border-slate-200 rounded text-sm font-medium text-slate-600">SQL</span>
+                        <span class="skill-tag px-3 py-1 bg-white border border-slate-200 rounded text-sm font-medium text-slate-600">HTML5</span>
+                        <span class="skill-tag px-3 py-1 bg-white border border-slate-200 rounded text-sm font-medium text-slate-600">CSS3</span>
+                    </div>
+                </div>
+
+                <!-- Frameworks -->
+                <div class="fade-up p-6 rounded-2xl bg-slate-50 border border-slate-100" style="transition-delay: 100ms;">
+                    <div class="w-10 h-10 bg-indigo-100 rounded-lg flex items-center justify-center mb-4 text-indigo-600">
+                        <i data-lucide="layers" class="w-5 h-5"></i>
+                    </div>
+                    <h3 class="font-bold text-lg mb-4">Frameworks</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="skill-tag px-3 py-1 bg-white border border-slate-200 rounded text-sm font-medium text-slate-600">Playwright</span>
+                        <span class="skill-tag px-3 py-1 bg-white border border-slate-200 rounded text-sm font-medium text-slate-600">Selenium</span>
+                        <span class="skill-tag px-3 py-1 bg-white border border-slate-200 rounded text-sm font-medium text-slate-600">RestAssured</span>
+                        <span class="skill-tag px-3 py-1 bg-white border border-slate-200 rounded text-sm font-medium text-slate-600">Node.js</span>
+                    </div>
+                </div>
+
+                <!-- Tools -->
+                <div class="fade-up p-6 rounded-2xl bg-slate-50 border border-slate-100" style="transition-delay: 200ms;">
+                    <div class="w-10 h-10 bg-emerald-100 rounded-lg flex items-center justify-center mb-4 text-emerald-600">
+                        <i data-lucide="wrench" class="w-5 h-5"></i>
+                    </div>
+                    <h3 class="font-bold text-lg mb-4">DevOps & Tools</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="skill-tag px-3 py-1 bg-white border border-slate-200 rounded text-sm font-medium text-slate-600">Git</span>
+                        <span class="skill-tag px-3 py-1 bg-white border border-slate-200 rounded text-sm font-medium text-slate-600">Jenkins</span>
+                        <span class="skill-tag px-3 py-1 bg-white border border-slate-200 rounded text-sm font-medium text-slate-600">Docker</span>
+                        <span class="skill-tag px-3 py-1 bg-white border border-slate-200 rounded text-sm font-medium text-slate-600">Postman</span>
+                        <span class="skill-tag px-3 py-1 bg-white border border-slate-200 rounded text-sm font-medium text-slate-600">JIRA</span>
+                    </div>
+                </div>
+
+                <!-- Database -->
+                <div class="fade-up p-6 rounded-2xl bg-slate-50 border border-slate-100" style="transition-delay: 300ms;">
+                    <div class="w-10 h-10 bg-amber-100 rounded-lg flex items-center justify-center mb-4 text-amber-600">
+                        <i data-lucide="database" class="w-5 h-5"></i>
+                    </div>
+                    <h3 class="font-bold text-lg mb-4">Data</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="skill-tag px-3 py-1 bg-white border border-slate-200 rounded text-sm font-medium text-slate-600">MySQL</span>
+                        <span class="skill-tag px-3 py-1 bg-white border border-slate-200 rounded text-sm font-medium text-slate-600">PostgreSQL</span>
+                        <span class="skill-tag px-3 py-1 bg-white border border-slate-200 rounded text-sm font-medium text-slate-600">Data Integrity</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- EXPERIENCE SECTION -->
+    <section id="experience" class="py-20 bg-slate-50">
+        <div class="max-w-4xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-slate-900 mb-12 flex items-center gap-3">
+                <i data-lucide="briefcase" class="w-8 h-8 text-blue-600"></i> Professional Journey
+            </h2>
+
+            <div class="relative border-l-2 border-slate-200 ml-4 space-y-12">
+                
+                <!-- Job 1 -->
+                <div class="mb-8 ml-8 fade-up">
+                    <span class="absolute -left-[9px] top-0 h-4 w-4 rounded-full bg-blue-600 ring-4 ring-blue-100"></span>
+                    <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-100">
+                        <div class="flex flex-col sm:flex-row justify-between items-start mb-4">
+                            <div>
+                                <h3 class="text-xl font-bold text-slate-900">Software Engineer (QA & Automation)</h3>
+                                <p class="text-blue-600 font-medium">QBurst Technologies</p>
+                            </div>
+                            <span class="px-3 py-1 bg-slate-100 text-slate-600 rounded-full text-xs font-semibold mt-2 sm:mt-0">
+                                July 2022 – March 2025
+                            </span>
+                        </div>
+                        <ul class="space-y-4 text-slate-600">
+                            <li class="flex items-start gap-3">
+                                <i data-lucide="check-circle-2" class="w-5 h-5 text-green-500 shrink-0 mt-0.5"></i>
+                                <span><strong>Automation Frameworks:</strong> Engineered scalable test frameworks using Playwright & Selenium (JavaScript), significantly reducing manual regression testing time and improving release reliability.</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i data-lucide="check-circle-2" class="w-5 h-5 text-green-500 shrink-0 mt-0.5"></i>
+                                <span><strong>CI/CD Integration:</strong> Integrated automated test pipelines into Jenkins workflows, enabling nightly builds and faster feedback loops for development teams.</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i data-lucide="check-circle-2" class="w-5 h-5 text-green-500 shrink-0 mt-0.5"></i>
+                                <span><strong>API Engineering:</strong> Developed robust API testing suites using Postman & RestAssured to validate payload integrity, status codes, and backend logic performance.</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i data-lucide="check-circle-2" class="w-5 h-5 text-green-500 shrink-0 mt-0.5"></i>
+                                <span><strong>Database Validation:</strong> Executed complex SQL queries to verify data integrity across MySQL and PostgreSQL databases, ensuring accurate transaction processing for critical FinTech applications.</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i data-lucide="check-circle-2" class="w-5 h-5 text-green-500 shrink-0 mt-0.5"></i>
+                                <span><strong>Test Strategy & Documentation:</strong> Created comprehensive test plans and documentation for key projects (StyleHint, Cenomi), facilitating smoother knowledge transfer and audit compliance.</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i data-lucide="check-circle-2" class="w-5 h-5 text-green-500 shrink-0 mt-0.5"></i>
+                                <span><strong>Cross-Functional Collaboration:</strong> Partnered closely with developers and product managers in Agile environments to identify logical defects early and ensure high code stability before deployment.</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section id="projects" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-slate-900 mb-4 text-center">Key Projects</h2>
+            <p class="text-slate-500 text-center mb-12 max-w-2xl mx-auto">Selected works demonstrating expertise in various domains including E-Commerce, FinTech, and Real Estate.</p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                
+                <!-- Project 1 -->
+                <div class="project-card bg-white rounded-2xl border border-slate-200 overflow-hidden fade-up">
+                    <div class="h-2 bg-gradient-to-r from-red-500 to-red-600"></div>
+                    <div class="p-8">
+                        <div class="flex justify-between items-start mb-4">
+                            <div>
+                                <h3 class="text-xl font-bold text-slate-900">StyleHint (Uniqlo)</h3>
+                                <span class="text-xs font-bold tracking-wide text-red-600 uppercase">E-Commerce / Social</span>
+                            </div>
+                            <i data-lucide="shopping-bag" class="w-6 h-6 text-slate-300"></i>
+                        </div>
+                        <p class="text-slate-600 mb-6 leading-relaxed">
+                            A global social commerce platform. Performed end-to-end testing of social feed integrations and checkout flows. Ensured UI consistency across iOS and Android platforms for global brand standards.
+                        </p>
+                        <div class="flex gap-2 text-xs font-mono text-slate-500">
+                            <span class="bg-slate-100 px-2 py-1 rounded">E-Commerce</span>
+                            <span class="bg-slate-100 px-2 py-1 rounded">Mobile Automation</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card bg-white rounded-2xl border border-slate-200 overflow-hidden fade-up" style="transition-delay: 100ms;">
+                    <div class="h-2 bg-gradient-to-r from-blue-500 to-cyan-500"></div>
+                    <div class="p-8">
+                        <div class="flex justify-between items-start mb-4">
+                            <div>
+                                <h3 class="text-xl font-bold text-slate-900">Finbook</h3>
+                                <span class="text-xs font-bold tracking-wide text-blue-600 uppercase">FinTech</span>
+                            </div>
+                            <i data-lucide="landmark" class="w-6 h-6 text-slate-300"></i>
+                        </div>
+                        <p class="text-slate-600 mb-6 leading-relaxed">
+                            Secure finance ledger application. Developed automated API tests to validate real-time data synchronization and transaction integrity. Verified compliance with strict security protocols.
+                        </p>
+                        <div class="flex gap-2 text-xs font-mono text-slate-500">
+                            <span class="bg-slate-100 px-2 py-1 rounded">API Testing</span>
+                            <span class="bg-slate-100 px-2 py-1 rounded">Security</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card bg-white rounded-2xl border border-slate-200 overflow-hidden fade-up">
+                    <div class="h-2 bg-gradient-to-r from-emerald-500 to-green-500"></div>
+                    <div class="p-8">
+                        <div class="flex justify-between items-start mb-4">
+                            <div>
+                                <h3 class="text-xl font-bold text-slate-900">Cenomi</h3>
+                                <span class="text-xs font-bold tracking-wide text-emerald-600 uppercase">Real Estate</span>
+                            </div>
+                            <i data-lucide="building-2" class="w-6 h-6 text-slate-300"></i>
+                        </div>
+                        <p class="text-slate-600 mb-6 leading-relaxed">
+                            Property listing platform. Managed defect tracking for listing management tools. Validated search algorithms and optimized filtering logic to ensure accurate query results for users.
+                        </p>
+                        <div class="flex gap-2 text-xs font-mono text-slate-500">
+                            <span class="bg-slate-100 px-2 py-1 rounded">Search Algorithms</span>
+                            <span class="bg-slate-100 px-2 py-1 rounded">Data Logic</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project-card bg-white rounded-2xl border border-slate-200 overflow-hidden fade-up" style="transition-delay: 100ms;">
+                    <div class="h-2 bg-gradient-to-r from-purple-500 to-pink-500"></div>
+                    <div class="p-8">
+                        <div class="flex justify-between items-start mb-4">
+                            <div>
+                                <h3 class="text-xl font-bold text-slate-900">Alumni Management</h3>
+                                <span class="text-xs font-bold tracking-wide text-purple-600 uppercase">Community Platform</span>
+                            </div>
+                            <i data-lucide="users" class="w-6 h-6 text-slate-300"></i>
+                        </div>
+                        <p class="text-slate-600 mb-6 leading-relaxed">
+                            Internal community tool. Streamlined user onboarding workflows for graduates. Tested and validated event management modules to ensure seamless RSVP tracking.
+                        </p>
+                        <div class="flex gap-2 text-xs font-mono text-slate-500">
+                            <span class="bg-slate-100 px-2 py-1 rounded">UX Flows</span>
+                            <span class="bg-slate-100 px-2 py-1 rounded">Event Systems</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- EDUCATION & COMMUNITY -->
+    <section id="education" class="py-20 bg-slate-50">
+        <div class="max-w-4xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-slate-900 mb-12 flex items-center gap-3">
+                <i data-lucide="graduation-cap" class="w-8 h-8 text-blue-600"></i> Education
+            </h2>
+
+            <div class="space-y-8 fade-up">
+                <!-- Masters -->
+                <div class="bg-white p-8 rounded-2xl border border-slate-200 shadow-sm relative overflow-hidden">
+                    <div class="absolute top-0 right-0 p-4 opacity-10">
+                        <i data-lucide="book-open" class="w-32 h-32 text-blue-900"></i>
+                    </div>
+                    <div class="relative z-10">
+                        <div class="flex flex-col sm:flex-row justify-between items-start mb-2">
+                            <h3 class="text-xl font-bold text-slate-900 pr-4">MSc Management of Information Systems & Digital Innovation</h3>
+                            <span class="text-sm font-semibold text-blue-600 bg-blue-50 px-3 py-1 rounded-full mt-2 sm:mt-0 whitespace-nowrap">2025 - 2026</span>
+                        </div>
+                        <p class="text-lg text-slate-700 mb-6">University of Leeds, UK</p>
+                        
+                        <div class="bg-slate-50 p-6 rounded-xl border border-slate-100">
+                            <h4 class="text-sm font-bold text-slate-900 uppercase tracking-wide mb-4 flex items-center gap-2">
+                                <i data-lucide="lightbulb" class="w-4 h-4 text-amber-500"></i> Key Modules & Insights
+                            </h4>
+                            <ul class="space-y-4 text-sm text-slate-600">
+                                <li class="flex gap-3">
+                                    <div class="min-w-[4px] bg-blue-500 rounded-full mt-1.5 h-1.5"></div>
+                                    <div>
+                                        <strong class="text-slate-900 block mb-1">Business Analytics & Decision Sciences</strong>
+                                        Acquired advanced skills in data-driven decision-making and predictive modeling to solve complex business challenges.
+                                    </div>
+                                </li>
+                                <li class="flex gap-3">
+                                    <div class="min-w-[4px] bg-indigo-500 rounded-full mt-1.5 h-1.5"></div>
+                                    <div>
+                                        <strong class="text-slate-900 block mb-1">Human-Centred AI</strong>
+                                        Explored ethical deployment strategies and user-centric design principles for artificial intelligence systems.
+                                    </div>
+                                </li>
+                                <li class="flex gap-3">
+                                    <div class="min-w-[4px] bg-purple-500 rounded-full mt-1.5 h-1.5"></div>
+                                    <div>
+                                        <strong class="text-slate-900 block mb-1">Digital Transformation Management</strong>
+                                        Developed strategies to align IT infrastructure with organizational business goals and manage large-scale digital change.
+                                    </div>
+                                </li>
+                                <li class="flex gap-3">
+                                    <div class="min-w-[4px] bg-pink-500 rounded-full mt-1.5 h-1.5"></div>
+                                    <div>
+                                        <strong class="text-slate-900 block mb-1">Evidence Based Consultancy</strong>
+                                        Applied consulting frameworks and data-backed methodologies to diagnose organizational problems and recommend IT solutions.
+                                    </div>
+                                </li>
+                                <li class="flex gap-3">
+                                    <div class="min-w-[4px] bg-emerald-500 rounded-full mt-1.5 h-1.5"></div>
+                                    <div>
+                                        <strong class="text-slate-900 block mb-1">Innovations in Operations & IS</strong>
+                                        Analyzed emerging technologies to optimize operational processes and drive efficiency in complex enterprise systems.
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bachelors -->
+                <div class="bg-white p-8 rounded-2xl border border-slate-200 shadow-sm">
+                    <div class="flex flex-col sm:flex-row justify-between items-start mb-2">
+                        <h3 class="text-xl font-bold text-slate-900 pr-4">B.Tech in Computer Science</h3>
+                        <span class="text-sm font-semibold text-slate-500 bg-slate-50 px-3 py-1 rounded-full mt-2 sm:mt-0 whitespace-nowrap">2018 - 2022</span>
+                    </div>
+                    <p class="text-lg text-slate-700 mb-2">College of Engineering, Chengannur</p>
+                    <div class="flex flex-wrap gap-4 text-sm text-slate-600 mt-4">
+                        <span class="inline-flex items-center gap-1 bg-slate-50 px-3 py-1.5 rounded-lg border border-slate-100">
+                            <i data-lucide="award" class="w-4 h-4 text-amber-500"></i> CGPA: 7.58/10
+                        </span>
+                        <span class="inline-flex items-center gap-1 bg-slate-50 px-3 py-1.5 rounded-lg border border-slate-100">
+                            <i data-lucide="users" class="w-4 h-4 text-blue-500"></i> College Chairperson (2022)
+                        </span>
+                        <span class="inline-flex items-center gap-1 bg-slate-50 px-3 py-1.5 rounded-lg border border-slate-100">
+                            <i data-lucide="zap" class="w-4 h-4 text-yellow-500"></i> CTO of Innovation Centre (2021)
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Leadership -->
+            <div class="mt-16 fade-up">
+                <h3 class="text-xl font-bold text-slate-900 mb-6 flex items-center gap-2">
+                    <i data-lucide="heart-handshake" class="w-5 h-5 text-blue-600"></i> Leadership & Community
+                </h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="p-4 bg-white border border-slate-200 rounded-lg">
+                        <h4 class="font-bold text-slate-900">College Chairperson</h4>
+                        <p class="text-sm text-slate-600 mt-1">Led student union, organized tech/cultural events, acted as student-admin liaison.</p>
+                    </div>
+                    <div class="p-4 bg-white border border-slate-200 rounded-lg">
+                        <h4 class="font-bold text-slate-900">CTO (IEDC)</h4>
+                        <p class="text-sm text-slate-600 mt-1">Directed technical initiatives and workshops at the Innovation & Entrepreneurship Centre.</p>
+                    </div>
+                    <div class="p-4 bg-white border border-slate-200 rounded-lg md:col-span-2">
+                        <h4 class="font-bold text-slate-900">NSS Volunteer</h4>
+                        <p class="text-sm text-slate-600 mt-1">Spearheaded community service: library setups, environmental awareness campaigns.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <footer id="contact" class="bg-slate-900 text-slate-300 py-20">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold text-white mb-8">Ready to engineer the next solution?</h2>
+            <div class="flex flex-col md:flex-row justify-center items-center gap-8 mb-12">
+                <a href="mailto:habelgeorge@gmail.com" class="flex items-center gap-2 hover:text-blue-400 transition-colors">
+                    <i data-lucide="mail" class="w-5 h-5"></i> habelgeorge@gmail.com
+                </a>
+                <a href="tel:+447799804588" class="flex items-center gap-2 hover:text-blue-400 transition-colors">
+                    <i data-lucide="phone" class="w-5 h-5"></i> +44 7799 804588
+                </a>
+                <a href="https://www.linkedin.com/in/habel-george-036346192" target="_blank" class="flex items-center gap-2 hover:text-blue-400 transition-colors">
+                    <i data-lucide="linkedin" class="w-5 h-5"></i> LinkedIn
+                </a>
+            </div>
+            <p class="text-sm text-slate-500">© 2025 Habel James George. Leeds, United Kingdom.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Initialize Icons
+        lucide.createIcons();
+
+        // Scroll Animation
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.fade-up').forEach((el) => observer.observe(el));
+    </script>
 </body>
 </html>
